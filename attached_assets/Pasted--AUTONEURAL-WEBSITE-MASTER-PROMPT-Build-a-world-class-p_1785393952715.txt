@@ -1,0 +1,884 @@
+# AUTONEURAL WEBSITE MASTER PROMPT
+
+Build a world-class, premium, enterprise AI company website for **Autoneural**.
+
+This is NOT a startup landing page.
+This is NOT a SaaS template.
+This is NOT a flashy cyberpunk AI website.
+
+The website should feel like a combination of:
+
+• Apple
+• Stripe
+• Linear
+• Notion
+• Vercel
+• Ramp
+• Framer
+• Figma
+
+The website should immediately communicate trust, innovation, engineering excellence, and enterprise-level capability.
+
+==================================================
+DESIGN PHILOSOPHY
+==================================================
+
+Design Style:
+Premium Enterprise Minimalism with Editorial Maximalism.
+
+The overall design language should combine:
+
+• 70% Minimalism
+• 30% Maximalism
+• Soft Claymorphism
+• Editorial Layouts
+• Large White Spaces
+• Luxury Typography
+• Premium Motion Design
+
+Avoid:
+❌ Neon colors
+❌ Cyberpunk
+❌ Hacker aesthetics
+❌ Gaming UI
+❌ Excessive gradients
+❌ Overly dark themes
+❌ Cheap glassmorphism
+❌ Loud animations
+
+Everything should feel expensive.
+
+The website should look like it belongs to a £100M technology company.
+
+==================================================
+COLOUR PALETTE
+==================================================
+
+Primary Background:
+#FAF9F6 (Warm White)
+
+Secondary Background:
+#F5F3EF
+
+Cards:
+#FFFFFF
+
+Alternate Sections:
+#F8F7F5
+
+Primary Text:
+#1E1E1E
+
+Secondary Text:
+#555555
+
+Borders:
+#E8E5E0
+
+Accent:
+#3558E6
+
+Muted Blue:
+#5678A8
+
+Success:
+#2F7A4D
+
+Shadows:
+
+Very soft.
+
+Use subtle layered shadows.
+
+No harsh shadows.
+
+==================================================
+TYPOGRAPHY
+==================================================
+
+Heading Font:
+General Sans
+
+Fallback:
+Satoshi
+
+Body:
+Inter
+
+Monospace:
+IBM Plex Mono
+
+Large Hero:
+80-96px
+
+Section Heading:
+48-64px
+
+Body:
+18px
+
+Use large spacing.
+
+Lots of breathing room.
+
+==================================================
+WEBSITE STYLE
+==================================================
+
+Every section should feel handcrafted.
+
+The user should never feel they are scrolling through a template.
+
+Alternate layouts.
+
+Some left aligned.
+
+Some centered.
+
+Some split layouts.
+
+Some editorial.
+
+Some full-width.
+
+==================================================
+ANIMATIONS
+==================================================
+
+Elegant.
+
+Never distracting.
+
+Use:
+
+• Framer Motion
+
+Animations:
+
+Fade Up
+
+Fade In
+
+Image Reveal
+
+Text Reveal
+
+Parallax
+
+Smooth Counter
+
+Card Lift
+
+Project Hover
+
+Section Reveal
+
+Soft Mouse Movement
+
+Button Ripple
+
+Smooth Page Transition
+
+NO
+
+Particles
+
+Flying Robots
+
+Matrix Effects
+
+Neon Glows
+
+==================================================
+NAVBAR
+==================================================
+
+Transparent initially.
+
+Turns white after scrolling.
+
+Logo
+
+Navigation
+
+Services
+
+Projects
+
+Industries
+
+About
+
+Insights
+
+Careers
+
+Contact
+
+CTA Button
+
+Book a Consultation
+
+Sticky Navbar.
+
+==================================================
+HERO SECTION
+==================================================
+
+Large editorial layout.
+
+Left:
+
+Headline
+
+Enterprise AI Solutions That Transform Businesses.
+
+Subheadline
+
+Autoneural builds intelligent software, AI agents, enterprise automation and custom digital platforms that help organisations streamline operations, automate repetitive work and accelerate growth.
+
+Buttons
+
+Book a Consultation
+
+View Projects
+
+Right Side
+
+Large premium claymorphism illustration showing:
+
+Connected Business Systems
+
+AI Agents
+
+Cloud Infrastructure
+
+Analytics
+
+Workflow Automation
+
+Floating soft objects.
+
+Very premium.
+
+Background:
+
+Subtle radial gradients.
+
+==================================================
+TRUST SECTION
+==================================================
+
+Trusted by businesses building the future.
+
+Scrolling monochrome logos.
+
+Client logos
+
+Partner logos
+
+Technology partners
+
+Infinite marquee.
+
+==================================================
+STATISTICS
+==================================================
+
+Animated counters.
+
+Projects Delivered
+
+Enterprise Clients
+
+Countries Served
+
+Processes Automated
+
+Hours Saved
+
+Customer Satisfaction
+
+Beautiful large typography.
+
+==================================================
+SERVICES
+==================================================
+
+Large premium clay cards.
+
+1.
+
+AI Consulting
+
+2.
+
+AI Agent Development
+
+3.
+
+Business Process Automation
+
+4.
+
+Enterprise Software Development
+
+5.
+
+Custom CRM & ERP Systems
+
+6.
+
+Workflow Automation
+
+7.
+
+Generative AI Solutions
+
+8.
+
+Machine Learning Solutions
+
+9.
+
+Cloud Architecture
+
+10.
+
+Data Engineering
+
+11.
+
+MLOps
+
+12.
+
+AI Integration
+
+Each card expands on hover.
+
+==================================================
+FEATURED PROJECTS
+==================================================
+
+This should be one of the largest sections.
+
+Beautiful alternating layout.
+
+Every project includes:
+
+Large Image
+
+Category
+
+Overview
+
+Problem
+
+Solution
+
+Technology Stack
+
+Business Impact
+
+CTA
+
+Featured projects:
+
+AI Seafood Trade Operating System
+
+Enterprise CRM Automation
+
+Healthcare AI Platform
+
+Manufacturing Automation
+
+Sales AI Assistant
+
+Recruitment AI Agent
+
+Warehouse Intelligence Platform
+
+Financial Process Automation
+
+Supply Chain Automation
+
+Each project card should feel like an Apple product page.
+
+Large visuals.
+
+Minimal text.
+
+Excellent spacing.
+
+==================================================
+CASE STUDIES
+==================================================
+
+Beautiful editorial cards.
+
+Each case study contains:
+
+Challenge
+
+Research
+
+Solution
+
+Implementation
+
+Technology
+
+Results
+
+Metrics
+
+Example metrics:
+
+80%
+
+Reduction in Manual Work
+
+5x
+
+Faster Processing
+
+92%
+
+Customer Satisfaction
+
+40%
+
+Cost Reduction
+
+==================================================
+INDUSTRIES
+==================================================
+
+Large interactive cards.
+
+Healthcare
+
+Manufacturing
+
+Retail
+
+Finance
+
+Construction
+
+Logistics
+
+Hospitality
+
+Education
+
+Government
+
+Seafood Export
+
+Real Estate
+
+Automotive
+
+==================================================
+OUR PROCESS
+==================================================
+
+Beautiful timeline.
+
+Discovery
+
+↓
+
+Research
+
+↓
+
+Architecture
+
+↓
+
+Design
+
+↓
+
+Development
+
+↓
+
+Testing
+
+↓
+
+Deployment
+
+↓
+
+Monitoring
+
+↓
+
+Continuous Optimisation
+
+Animated connecting line.
+
+==================================================
+TECHNOLOGY STACK
+==================================================
+
+Beautiful logo grid.
+
+Frontend
+
+Next.js
+
+React
+
+TypeScript
+
+Tailwind
+
+Backend
+
+NestJS
+
+Node.js
+
+Python
+
+FastAPI
+
+Java
+
+Databases
+
+PostgreSQL
+
+MongoDB
+
+Redis
+
+Cloud
+
+AWS
+
+Azure
+
+Docker
+
+Kubernetes
+
+Terraform
+
+AI
+
+OpenAI
+
+Anthropic
+
+Google Gemini
+
+Llama
+
+n8n
+
+LangChain
+
+Model Context Protocol (MCP)
+
+Vector Databases
+
+Pinecone
+
+Qdrant
+
+Weaviate
+
+==================================================
+WHY AUTONEURAL
+==================================================
+
+Comparison section.
+
+Traditional Software
+
+vs
+
+Autoneural AI
+
+Manual Work
+
+↓
+
+AI Automation
+
+Months
+
+↓
+
+Weeks
+
+Reactive
+
+↓
+
+Predictive
+
+Disconnected Systems
+
+↓
+
+Connected Intelligence
+
+==================================================
+TEAM
+==================================================
+
+Editorial grid.
+
+Professional portraits.
+
+Founder
+
+CTO
+
+AI Engineers
+
+Software Engineers
+
+Cloud Engineers
+
+Designers
+
+Simple.
+
+Elegant.
+
+==================================================
+INSIGHTS
+==================================================
+
+Professional blog.
+
+Categories:
+
+Artificial Intelligence
+
+Automation
+
+Enterprise Software
+
+Digital Transformation
+
+Machine Learning
+
+Case Studies
+
+Engineering
+
+Latest articles displayed in beautiful cards.
+
+==================================================
+TESTIMONIALS
+==================================================
+
+Large premium quote cards.
+
+Company logos.
+
+Video testimonials.
+
+Success stories.
+
+==================================================
+CONTACT
+==================================================
+
+Large CTA.
+
+Let's Build the Future Together.
+
+Contact Form
+
+Book Meeting
+
+Email
+
+Phone
+
+LinkedIn
+
+Office
+
+Beautiful map.
+
+==================================================
+FOOTER
+==================================================
+
+Professional multi-column footer.
+
+Company
+
+Services
+
+Projects
+
+Resources
+
+Blog
+
+Careers
+
+Legal
+
+Social
+
+Newsletter
+
+==================================================
+MICRO INTERACTIONS
+==================================================
+
+Buttons lift slightly.
+
+Cards elevate.
+
+Project images zoom.
+
+Underline animations.
+
+Smooth hover transitions.
+
+Animated icons.
+
+Elegant loading effects.
+
+==================================================
+CLAYMORPHISM
+==================================================
+
+Use claymorphism selectively.
+
+Only for:
+
+Service Cards
+
+Statistics
+
+Feature Highlights
+
+CTA Cards
+
+Soft rounded corners.
+
+Soft layered shadows.
+
+Subtle depth.
+
+==================================================
+RESPONSIVE
+==================================================
+
+Pixel-perfect on:
+
+Desktop
+
+Laptop
+
+Tablet
+
+Mobile
+
+Ultra-wide monitors
+
+==================================================
+PERFORMANCE
+==================================================
+
+Lighthouse:
+
+Performance: 95+
+
+Accessibility: 100
+
+SEO: 100
+
+Best Practices: 100
+
+==================================================
+TECH STACK
+==================================================
+
+Next.js 15
+
+TypeScript
+
+Tailwind CSS
+
+Framer Motion
+
+React Three Fiber (only subtle use)
+
+Lenis Smooth Scroll
+
+GSAP (only where necessary)
+
+Sanity CMS
+
+React Hook Form
+
+Zod
+
+Vercel
+
+==================================================
+SEO
+==================================================
+
+Optimise for:
+
+AI Development Company
+
+Enterprise AI Solutions
+
+Business Automation
+
+AI Agents
+
+Workflow Automation
+
+Generative AI Development
+
+Custom AI Software
+
+Digital Transformation
+
+Enterprise Software Development
+
+Include:
+
+Schema.org structured data
+
+Open Graph
+
+Twitter Cards
+
+Dynamic Metadata
+
+XML Sitemap
+
+Robots.txt
+
+Canonical URLs
+
+==================================================
+OVERALL EXPERIENCE
+==================================================
+
+The final website should make visitors feel:
+
+"This company builds mission-critical AI systems for enterprises."
+
+The experience should be calm, premium, trustworthy, modern and memorable—not flashy. Every section should demonstrate engineering excellence, business impact, and real-world project delivery. Prioritise clarity, craftsmanship, whitespace, refined motion, and outstanding case studies over visual gimmicks.

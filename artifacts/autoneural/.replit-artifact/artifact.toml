@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "Autoneural"
+version = "1.0.0"
+id = "artifacts/autoneural"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23948
+
+[services.development]
+run = "pnpm --filter @workspace/autoneural run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/autoneural", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/autoneural/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23948"
+BASE_PATH = "/"
