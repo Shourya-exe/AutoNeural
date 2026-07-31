@@ -49,7 +49,7 @@ export function TechStack() {
   ];
 
   return (
-    <section className="py-24 bg-white border-y border-border" data-testid="tech-stack-section">
+    <section className="py-24 bg-background border-y border-border" data-testid="tech-stack-section">
       <div className="container mx-auto px-6 md:px-12">
         <div className="mb-16 text-center">
           <motion.h2 

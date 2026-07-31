@@ -31,7 +31,7 @@ export function Industries() {
   ];
 
   return (
-    <section id="industries" className="py-24 bg-white" data-testid="industries-section">
+    <section id="industries" className="py-24 bg-background" data-testid="industries-section">
       <div className="container mx-auto px-6 md:px-12">
         <div className="mb-16">
           <motion.h2 

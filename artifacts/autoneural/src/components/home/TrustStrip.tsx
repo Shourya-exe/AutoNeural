@@ -25,7 +25,7 @@ export function TrustStrip() {
   const duplicatedLogos = [...logos, ...logos];
 
   return (
-    <section className="py-12 border-y border-border bg-white overflow-hidden" data-testid="trust-strip">
+    <section className="py-12 border-y border-border bg-background overflow-hidden" data-testid="trust-strip">
       <div className="container mx-auto px-6 text-center mb-8">
         <p className="text-sm font-medium text-secondary-foreground uppercase tracking-widest">
           Trusted by businesses building the future

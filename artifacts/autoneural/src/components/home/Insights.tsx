@@ -23,7 +23,7 @@ export function Insights() {
   ];
 
   return (
-    <section id="insights" className="py-32 bg-white" data-testid="insights-section">
+    <section id="insights" className="py-32 bg-background" data-testid="insights-section">
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div>

@@ -21,7 +21,7 @@ const founders = [
 
 export function Team() {
   return (
-    <section id="about" className="py-32 bg-white" data-testid="team-section">
+    <section id="about" className="py-32 bg-background" data-testid="team-section">
       <div className="container mx-auto px-6 md:px-12">
 
         {/* Header */}
