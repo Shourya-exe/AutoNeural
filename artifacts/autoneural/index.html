@@ -1,114 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
-    <!-- Primary SEO -->
-    <title>Autoneural | Enterprise AI Solutions, AI Agents & Business Automation</title>
-    <meta name="description" content="Autoneural builds world-class enterprise AI solutions — custom AI agents, intelligent automation, and digital platforms that help businesses streamline operations and accelerate growth. Book a free consultation today." />
-    <meta name="keywords" content="enterprise AI solutions, AI agents, business automation, custom AI software, AI consulting, machine learning, intelligent automation, AI development company, enterprise software, AI platform" />
+    <!-- Fonts: preconnected and swap-enabled so text paints immediately.
+         Loaded here rather than via CSS @import, which blocks rendering. -->
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600,700&display=swap"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      onload="this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600,700&display=swap"
+      />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      />
+    </noscript>
+
     <meta name="author" content="Autoneural" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <link rel="canonical" href="https://autoneural.com/" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="theme-color" content="#F4EEE2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#17110C" media="(prefers-color-scheme: dark)" />
+    <meta name="msapplication-TileColor" content="#17110C" />
 
-    <!-- Open Graph / Facebook -->
+    <!-- Geo targeting: India-registered domain, India-first audience -->
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="India" />
+
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" hreflang="en" href="https://autoneural.in/" />
+    <link rel="alternate" hreflang="x-default" href="https://autoneural.in/" />
+
+    <!--
+      Everything between these markers is rewritten per route at build time by
+      scripts/prerender.mjs, and kept in sync during client-side navigation by
+      src/components/Seo.tsx. The values below are the home-page defaults,
+      which is also what the dev server serves.
+    -->
+    <!--seo:start-->
+    <title>Autoneural | AI Agents, Chatbots &amp; Automation for Business</title>
+    <meta name="description" content="We build custom AI agents, WhatsApp chatbots, workflow automation, dashboards and websites for growing businesses. Fixed-price scope, live in 2–4 weeks. Talk to us." />
+    <meta name="keywords" content="AI agency India, custom AI agents, AI chatbot development, WhatsApp chatbot, business process automation, n8n automation, AI software development company, workflow automation services" />
+    <link rel="canonical" href="https://autoneural.in/" />
+    <meta property="og:url" content="https://autoneural.in/" />
+    <meta property="og:title" content="Autoneural | AI Agents, Chatbots &amp; Automation for Business" />
+    <meta property="og:description" content="We build custom AI agents, WhatsApp chatbots, workflow automation, dashboards and websites for growing businesses. Fixed-price scope, live in 2–4 weeks. Talk to us." />
+    <meta name="twitter:title" content="Autoneural | AI Agents, Chatbots &amp; Automation for Business" />
+    <meta name="twitter:description" content="We build custom AI agents, WhatsApp chatbots, workflow automation, dashboards and websites for growing businesses. Fixed-price scope, live in 2–4 weeks. Talk to us." />
+    <meta name="twitter:image" content="https://autoneural.in/og-image.png" />
+    <!--seo:end-->
+
+    <link rel="preload" as="image" href="/media/hero-agents.webp" fetchpriority="high" />
+
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Autoneural" />
-    <meta property="og:url" content="https://autoneural.com/" />
-    <meta property="og:title" content="Autoneural | Enterprise AI Solutions, AI Agents & Business Automation" />
-    <meta property="og:description" content="Autoneural builds world-class enterprise AI solutions — custom AI agents, intelligent automation, and digital platforms that help businesses streamline operations and accelerate growth." />
-    <meta property="og:image" content="https://autoneural.com/og-image.jpg" />
+    <meta property="og:image" content="https://autoneural.in/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:locale" content="en_GB" />
+    <meta property="og:image:alt" content="Autoneural — AI agents, chatbots and automation for business" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:locale:alternate" content="en_US" />
 
-    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@autoneural" />
     <meta name="twitter:creator" content="@autoneural" />
-    <meta name="twitter:title" content="Autoneural | Enterprise AI Solutions, AI Agents & Business Automation" />
-    <meta name="twitter:description" content="Autoneural builds world-class enterprise AI solutions — custom AI agents, intelligent automation, and digital platforms that help businesses streamline operations." />
-    <meta name="twitter:image" content="https://autoneural.com/og-image.jpg" />
+    <meta name="twitter:image" content="https://autoneural.in/og-image.png" />
 
-    <!-- Theme & App -->
-    <meta name="theme-color" content="#3558E6" />
-    <meta name="msapplication-TileColor" content="#3558E6" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
-    <!-- Structured Data: Organization -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Autoneural",
-      "url": "https://autoneural.com",
-      "logo": "https://autoneural.com/favicon.svg",
-      "description": "Autoneural builds world-class enterprise AI solutions including custom AI agents, intelligent automation, and digital platforms.",
-      "foundingDate": "2024",
-      "sameAs": [
-        "https://www.linkedin.com/company/autoneural",
-        "https://twitter.com/autoneural"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "availableLanguage": "English"
-      },
-      "offers": {
-        "@type": "Offer",
-        "description": "Enterprise AI consulting, AI agent development, business process automation, and custom enterprise software."
+    <!-- Google Ads (gtag.js). Deliberately outside the seo: markers above, so
+         the prerender pass copies it into every route rather than overwriting
+         it. Loads async, so it never holds up first paint. -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18322151597"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
-    }
+      gtag('js', new Date());
+      gtag('config', 'AW-18322151597');
     </script>
-
-    <!-- Structured Data: WebSite with SearchAction -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Autoneural",
-      "url": "https://autoneural.com",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://autoneural.com/?q={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-      }
-    }
-    </script>
-
-    <!-- Structured Data: ProfessionalService -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Autoneural",
-      "url": "https://autoneural.com",
-      "image": "https://autoneural.com/og-image.jpg",
-      "description": "Enterprise AI solutions company specialising in AI agents, automation, and intelligent software for businesses.",
-      "priceRange": "££££",
-      "areaServed": "Worldwide",
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "AI Services",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Consulting" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Agent Development" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business Process Automation" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Enterprise Software Development" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Machine Learning & Predictive Analytics" } }
-        ]
-      }
-    }
-    </script>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div id="root"></div>

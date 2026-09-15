@@ -1,0 +1,13 @@
+# Supabase CLI project config.
+# `project_id` is a local label only; the linked remote project ref comes from
+# `supabase link --project-ref <ref>`.
+project_id = "autoneural"
+
+[functions.contact-submit]
+# Anonymous visitors have no JWT, so the platform-level check is off and the
+# function does its own authorisation: origin allowlist + honeypot + fill-time
+# + per-IP and per-email rate limits.
+verify_jwt = false
+
+[functions.newsletter-subscribe]
+verify_jwt = false

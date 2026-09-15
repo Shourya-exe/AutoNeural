@@ -1,0 +1,77 @@
+# Autoneural — Apache/LiteSpeed config for the prerendered static site.
+#
+# Ships inside dist/public, so uploading the build also installs this file.
+# Hostinger's hPanel hosting runs LiteSpeed, which reads .htaccess.
+
+# --------------------------------------------------------------------------
+# Routing
+#
+# Every route is prerendered to its own directory (e.g. /services/index.html).
+# Serve a real file or directory when one exists; otherwise fall back to the
+# SPA shell so client-side routes still resolve instead of 404ing.
+# --------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Force HTTPS. The Edge Functions only allow https:// origins, so a page
+  # served over plain HTTP would have its form submissions rejected.
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+ErrorDocument 404 /404.html
+
+# --------------------------------------------------------------------------
+# Caching
+#
+# Filenames under /assets/ carry a content hash, so they can be cached
+# indefinitely. HTML must revalidate or visitors keep seeing the old build
+# after a deploy.
+# --------------------------------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css                "access plus 1 year"
+  ExpiresByType application/javascript  "access plus 1 year"
+  ExpiresByType image/webp              "access plus 1 year"
+  ExpiresByType image/png               "access plus 1 year"
+  ExpiresByType image/jpeg              "access plus 1 year"
+  ExpiresByType image/svg+xml           "access plus 1 year"
+  ExpiresByType font/woff2              "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|webp|png|jpe?g|svg|woff2?)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+
+  # sitemap.xml and robots.txt change on each deploy; do not let them stick.
+  <FilesMatch "\.(xml|txt)$">
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml \
+    application/javascript application/json image/svg+xml
+</IfModule>
+
+# Correct types for assets this build ships.
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+  AddType application/manifest+json .webmanifest
+</IfModule>

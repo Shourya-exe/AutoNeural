@@ -1,25 +1,27 @@
-@import url('https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap');
 @import 'tailwindcss';
+@plugin '@tailwindcss/typography';
 @import 'tw-animate-css';
-@plugin "@tailwindcss/typography";
 
-@custom-variant dark (&:is(.dark *));
+/* ==========================================================================
+   Autoneural design system
+
+   Warm cream ground with a burnt-orange primary and a deep green accent.
+   Aivora (the voice-agent product) carries its own gold sub-palette so it
+   reads as a distinct brand-within-a-brand wherever it appears.
+   ========================================================================== */
 
 @theme inline {
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
   --color-border: hsl(var(--border));
-  --color-input: hsl(var(--input));
-  --color-ring: hsl(var(--ring));
 
   --color-card: hsl(var(--card));
   --color-card-foreground: hsl(var(--card-foreground));
-  --color-card-border: hsl(var(--card-border));
+  --color-card-border: var(--card-border);
 
   --color-popover: hsl(var(--popover));
   --color-popover-foreground: hsl(var(--popover-foreground));
-  --color-popover-border: hsl(var(--popover-border));
+  --color-popover-border: var(--popover-border);
 
   --color-primary: hsl(var(--primary));
   --color-primary-foreground: hsl(var(--primary-foreground));
@@ -41,78 +43,84 @@
   --color-destructive-foreground: hsl(var(--destructive-foreground));
   --color-destructive-border: var(--destructive-border);
 
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  /* Aivora sub-brand */
+  --color-aivora: var(--aivora-gold);
+  --color-aivora-deep: var(--aivora-gold-deep);
+  --color-aivora-champagne: var(--aivora-champagne);
+  --color-aivora-live: var(--aivora-live);
+
   --font-sans: var(--app-font-sans);
   --font-serif: var(--app-font-serif);
   --font-mono: var(--app-font-mono);
   --font-heading: 'General Sans', 'Inter', sans-serif;
 
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
   --shadow-clay: var(--shadow-clay);
   --shadow-clay-hover: var(--shadow-clay-hover);
 
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
+  --animate-marquee: marquee 30s linear infinite;
 }
 
-/* LIGHT MODE */
 :root {
-  --button-outline: rgba(0, 0, 0, 0.1);
-  --badge-outline: rgba(0, 0, 0, 0.05);
-
+  --button-outline: #0000001a;
+  --badge-outline: #0000000d;
   --opaque-button-border-intensity: -8;
+  --elevate-1: #00000008;
+  --elevate-2: #00000014;
 
-  --elevate-1: rgba(0, 0, 0, 0.03);
-  --elevate-2: rgba(0, 0, 0, 0.08);
+  --background: 42 38% 95%;
+  --foreground: 24 31% 7%;
+  --border: 34 24% 84%;
 
-  /* Primary Background: #FAF9F6 */
-  --background: 45 14% 97%; 
-  /* Primary Text: #1E1E1E */
-  --foreground: 0 0% 12%; 
-  
-  /* Borders: #E8E5E0 */
-  --border: 38 17% 89%; 
+  --card: 40 35% 97%;
+  --card-foreground: 24 31% 7%;
+  --card-border: 34 24% 84%;
 
-  /* Cards: #FFFFFF */
-  --card: 0 0% 100%; 
-  --card-foreground: 0 0% 12%; 
-  --card-border: 38 17% 89%; 
+  --popover: 40 35% 97%;
+  --popover-foreground: 24 31% 7%;
+  --popover-border: 34 24% 84%;
 
-  --popover: 0 0% 100%; 
-  --popover-foreground: 0 0% 12%; 
-  --popover-border: 38 17% 89%; 
+  --primary: 22 71% 49%;
+  --primary-foreground: 42 38% 95%;
 
-  /* Accent: #3558E6 */
-  --primary: 228 77% 55%; 
-  --primary-foreground: 0 0% 100%; 
+  --secondary: 39 31% 91%;
+  --secondary-foreground: 23 13% 38%;
 
-  /* Secondary Background: #F5F3EF */
-  --secondary: 40 23% 95%; 
-  /* Secondary Text: #555555 */
-  --secondary-foreground: 0 0% 33%; 
+  --muted: 40 35% 93%;
+  --muted-foreground: 23 13% 38%;
 
-  /* Alternate Sections: #F8F7F5 */
-  --muted: 40 18% 97%; 
-  --muted-foreground: 0 0% 33%; 
+  --accent: 158 28% 22%;
+  --accent-foreground: 42 38% 95%;
 
-  /* Muted Blue: #5678A8 */
-  --accent: 215 33% 50%; 
-  --accent-foreground: 0 0% 100%; 
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
 
-  --destructive: 0 84% 60%; 
-  --destructive-foreground: 0 0% 100%; 
-
-  --input: 38 17% 89%; 
-  --ring: 228 77% 55%; 
+  --input: 38 17% 89%;
+  --ring: 22 71% 49%;
 
   --app-font-sans: 'Inter', sans-serif;
-  --app-font-serif: Georgia, serif;
+  --app-font-serif: 'Cormorant Garamond', Georgia, serif;
   --app-font-mono: 'IBM Plex Mono', monospace;
-  
-  --radius: 1rem; 
-  
-  --shadow-clay: 0 8px 30px rgba(0, 0, 0, 0.04), 0 4px 10px rgba(0, 0, 0, 0.02), inset 0 2px 4px rgba(255, 255, 255, 0.5);
-  --shadow-clay-hover: 0 15px 40px rgba(0, 0, 0, 0.08), 0 6px 15px rgba(0, 0, 0, 0.04), inset 0 2px 4px rgba(255, 255, 255, 0.5);
+
+  --aivora-gold: #c9a063;
+  --aivora-gold-deep: #a67c3d;
+  --aivora-champagne: #e8d5b7;
+  --aivora-live: #3fa66b;
+  --aivora-hairline: #b4966e3d;
+
+  --radius: 0.5rem;
+
+  /* Soft, warm elevation — the "clay" look used on every raised card. */
+  --shadow-clay:
+    0 18px 60px #2d1c0e14, 0 8px 24px #2d1c0e0d, inset 0 1px 0 #ffffffb8;
+  --shadow-clay-hover:
+    0 26px 80px #2d1c0e21, 0 12px 30px #2d1c0e14, inset 0 1px 0 #ffffffb8;
 
   --sidebar-primary-border: hsl(var(--primary));
   --sidebar-accent-border: hsl(var(--accent));
@@ -124,47 +132,134 @@
 }
 
 .dark {
-  --background: 0 0% 12%; 
-  --foreground: 45 14% 97%; 
-  --border: 0 0% 20%; 
-  --card: 0 0% 15%; 
-  --card-foreground: 45 14% 97%; 
-  --card-border: 0 0% 20%; 
-  --popover: 0 0% 15%; 
-  --popover-foreground: 45 14% 97%; 
-  --popover-border: 0 0% 20%; 
-  --primary: 228 77% 55%; 
-  --primary-foreground: 0 0% 100%; 
-  --secondary: 0 0% 20%; 
-  --secondary-foreground: 0 0% 80%; 
-  --muted: 0 0% 20%; 
-  --muted-foreground: 0 0% 80%; 
-  --accent: 215 33% 50%; 
-  --accent-foreground: 0 0% 100%; 
-  --destructive: 0 84% 60%; 
-  --destructive-foreground: 0 0% 100%; 
-  --input: 0 0% 20%; 
-  --ring: 228 77% 55%; 
+  --background: 0 0% 12%;
+  --foreground: 45 14% 97%;
+  --border: 0 0% 20%;
+  --card: 0 0% 15%;
+  --card-foreground: 45 14% 97%;
+  --card-border: 0 0% 20%;
+  --popover: 0 0% 15%;
+  --popover-foreground: 45 14% 97%;
+  --popover-border: 0 0% 20%;
+  --primary: 228 77% 55%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 20%;
+  --secondary-foreground: 0 0% 80%;
+  --muted: 0 0% 20%;
+  --muted-foreground: 0 0% 80%;
+  --accent: 215 33% 50%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --input: 0 0% 20%;
+  --ring: 228 77% 55%;
 }
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
   * {
     @apply border-border;
   }
 
   body {
-    @apply font-sans antialiased bg-background text-foreground;
+    background-color: hsl(var(--background));
+    font-family: var(--app-font-sans);
+    color: hsl(var(--foreground));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Faint warm graph paper under everything, at 72px pitch. */
+    background-image:
+      linear-gradient(90deg, #8252240a 1px, #0000 1px),
+      linear-gradient(#82522409 1px, #0000 1px);
+    background-size: 72px 72px;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-heading tracking-tight;
   }
 }
 
+/* --------------------------------------------------------------------------
+   Aivora surfaces
+
+   A frosted panel with a gradient hairline border. The border uses two
+   backgrounds (padding-box + border-box) because a plain border cannot take a
+   gradient; `isolation: isolate` keeps the blur from sampling siblings.
+   -------------------------------------------------------------------------- */
+.aivora-panel {
+  isolation: isolate;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 26px;
+  background:
+    linear-gradient(#ffffff9e, #ffffff80) padding-box,
+    linear-gradient(135deg, #fffffff2, #ffffff47 42%, var(--aivora-gold)) border-box;
+  -webkit-backdrop-filter: blur(22px) saturate(175%) brightness(1.05);
+  backdrop-filter: blur(22px) saturate(175%) brightness(1.05);
+  box-shadow:
+    inset 0 1px #ffffffeb,
+    inset 0 -1px #a0825a1a,
+    0 1px 2px #785a3214,
+    0 10px 28px -10px #966e3c2e,
+    0 34px 68px -26px #966e3c42;
+}
+
+.aivora-panel-thin {
+  -webkit-backdrop-filter: blur(10px) saturate(150%) brightness(1.03);
+  backdrop-filter: blur(10px) saturate(150%) brightness(1.03);
+  box-shadow:
+    inset 0 1px #ffffffe6,
+    0 1px 2px #785a3212,
+    0 6px 18px -10px #966e3c33;
+}
+
+.aivora-gold-text {
+  color: transparent;
+  background: linear-gradient(100deg, #c9a063, #e0be84, #a67c3d);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Gold grid, faded top and bottom so it never meets a section edge hard. */
+.aivora-grid {
+  background-image:
+    linear-gradient(#c9a06317 1px, #0000 1px),
+    linear-gradient(90deg, #c9a06317 1px, #0000 1px);
+  background-size: 34px 34px;
+  -webkit-mask-image: linear-gradient(#0000, #000 16% 78%, #0000);
+  mask-image: linear-gradient(#0000, #000 16% 78%, #0000);
+}
+
+/* Tabular figures, so live-updating numbers do not jitter. */
+.aivora-numerals {
+  font-variant-numeric: tabular-nums;
+}
+
+.aivora-ping {
+  animation: aivora-ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes aivora-ping {
+  0% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.75);
+  }
+}
+
 @keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }

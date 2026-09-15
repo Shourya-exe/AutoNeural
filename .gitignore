@@ -47,3 +47,15 @@ Thumbs.db
 # Replit
 .cache/
 .local/
+
+# Local environment — never commit. `.env.example` is the committed template.
+.env
+.env.*
+!.env.example
+
+# Supabase CLI local state
+supabase/.branches
+supabase/.temp
+
+# Deployment archive, rebuilt from dist/ on demand.
+autoneural-site.zip

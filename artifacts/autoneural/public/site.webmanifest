@@ -1,0 +1,16 @@
+{
+  "name": "Autoneural — AI Agents, Chatbots & Automation",
+  "short_name": "Autoneural",
+  "description": "Custom AI agents, chatbots, workflow automation, dashboards and websites for growing businesses.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F4EEE2",
+  "theme_color": "#F4EEE2",
+  "icons": [
+    { "src": "/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
