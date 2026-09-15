@@ -12,7 +12,7 @@ export function Industries() {
             <div className="w-20 h-1 bg-primary rounded-full" style={{ width: '0px' }} />
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-            <motion.div className="group p-6 bg-muted rounded-2xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-clay hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-0" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="group p-6 bg-[rgba(248,245,240,0.85)] backdrop-blur-md rounded-2xl border border-[rgba(107,30,50,0.12)] shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_12px_32px_-10px_rgba(69,19,35,0.06)] hover:border-primary/35 hover:bg-[rgba(248,245,240,0.96)] hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-0" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <HeartPulse size={32} className="text-secondary-foreground group-hover:text-primary transition-colors mb-4" aria-hidden="true" />
               <h3 className="text-lg font-heading font-semibold text-foreground mb-2">
                 Healthcare
@@ -21,7 +21,7 @@ export function Industries() {
                 Appointments, records, follow-ups
               </p>
             </motion.div>
-            <motion.div className="group p-6 bg-muted rounded-2xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-clay hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-1" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="group p-6 bg-[rgba(248,245,240,0.85)] backdrop-blur-md rounded-2xl border border-[rgba(107,30,50,0.12)] shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_12px_32px_-10px_rgba(69,19,35,0.06)] hover:border-primary/35 hover:bg-[rgba(248,245,240,0.96)] hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-1" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <Factory size={32} className="text-secondary-foreground group-hover:text-primary transition-colors mb-4" aria-hidden="true" />
               <h3 className="text-lg font-heading font-semibold text-foreground mb-2">
                 Manufacturing
@@ -30,7 +30,7 @@ export function Industries() {
                 Quality checks and factory reports
               </p>
             </motion.div>
-            <motion.div className="group p-6 bg-muted rounded-2xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-clay hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-2" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="group p-6 bg-[rgba(248,245,240,0.85)] backdrop-blur-md rounded-2xl border border-[rgba(107,30,50,0.12)] shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_12px_32px_-10px_rgba(69,19,35,0.06)] hover:border-primary/35 hover:bg-[rgba(248,245,240,0.96)] hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-2" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <ShoppingBag size={32} className="text-secondary-foreground group-hover:text-primary transition-colors mb-4" aria-hidden="true" />
               <h3 className="text-lg font-heading font-semibold text-foreground mb-2">
                 Retail
@@ -39,7 +39,7 @@ export function Industries() {
                 Orders, stock, customer support
               </p>
             </motion.div>
-            <motion.div className="group p-6 bg-muted rounded-2xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-clay hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-3" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="group p-6 bg-[rgba(248,245,240,0.85)] backdrop-blur-md rounded-2xl border border-[rgba(107,30,50,0.12)] shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_12px_32px_-10px_rgba(69,19,35,0.06)] hover:border-primary/35 hover:bg-[rgba(248,245,240,0.96)] hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-3" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <Landmark size={32} className="text-secondary-foreground group-hover:text-primary transition-colors mb-4" aria-hidden="true" />
               <h3 className="text-lg font-heading font-semibold text-foreground mb-2">
                 Finance
@@ -48,7 +48,7 @@ export function Industries() {
                 Invoices, approvals, risk checks
               </p>
             </motion.div>
-            <motion.div className="group p-6 bg-muted rounded-2xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-clay hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-4" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="group p-6 bg-[rgba(248,245,240,0.85)] backdrop-blur-md rounded-2xl border border-[rgba(107,30,50,0.12)] shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_12px_32px_-10px_rgba(69,19,35,0.06)] hover:border-primary/35 hover:bg-[rgba(248,245,240,0.96)] hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-4" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <HardHat size={32} className="text-secondary-foreground group-hover:text-primary transition-colors mb-4" aria-hidden="true" />
               <h3 className="text-lg font-heading font-semibold text-foreground mb-2">
                 Construction
@@ -57,7 +57,7 @@ export function Industries() {
                 Site updates and safety records
               </p>
             </motion.div>
-            <motion.div className="group p-6 bg-muted rounded-2xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-clay hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-5" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="group p-6 bg-[rgba(248,245,240,0.85)] backdrop-blur-md rounded-2xl border border-[rgba(107,30,50,0.12)] shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_12px_32px_-10px_rgba(69,19,35,0.06)] hover:border-primary/35 hover:bg-[rgba(248,245,240,0.96)] hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-5" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <Truck size={32} className="text-secondary-foreground group-hover:text-primary transition-colors mb-4" aria-hidden="true" />
               <h3 className="text-lg font-heading font-semibold text-foreground mb-2">
                 Logistics
@@ -66,7 +66,7 @@ export function Industries() {
                 Routes, shipments, delivery tracking
               </p>
             </motion.div>
-            <motion.div className="group p-6 bg-muted rounded-2xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-clay hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-6" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="group p-6 bg-[rgba(248,245,240,0.85)] backdrop-blur-md rounded-2xl border border-[rgba(107,30,50,0.12)] shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_12px_32px_-10px_rgba(69,19,35,0.06)] hover:border-primary/35 hover:bg-[rgba(248,245,240,0.96)] hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-6" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <Utensils size={32} className="text-secondary-foreground group-hover:text-primary transition-colors mb-4" aria-hidden="true" />
               <h3 className="text-lg font-heading font-semibold text-foreground mb-2">
                 Hospitality
@@ -75,7 +75,7 @@ export function Industries() {
                 Bookings, pricing, guest support
               </p>
             </motion.div>
-            <motion.div className="group p-6 bg-muted rounded-2xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-clay hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-7" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="group p-6 bg-[rgba(248,245,240,0.85)] backdrop-blur-md rounded-2xl border border-[rgba(107,30,50,0.12)] shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_12px_32px_-10px_rgba(69,19,35,0.06)] hover:border-primary/35 hover:bg-[rgba(248,245,240,0.96)] hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-7" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <GraduationCap size={32} className="text-secondary-foreground group-hover:text-primary transition-colors mb-4" aria-hidden="true" />
               <h3 className="text-lg font-heading font-semibold text-foreground mb-2">
                 Education
@@ -84,7 +84,7 @@ export function Industries() {
                 Student support and admin work
               </p>
             </motion.div>
-            <motion.div className="group p-6 bg-muted rounded-2xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-clay hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-8" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="group p-6 bg-[rgba(248,245,240,0.85)] backdrop-blur-md rounded-2xl border border-[rgba(107,30,50,0.12)] shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_12px_32px_-10px_rgba(69,19,35,0.06)] hover:border-primary/35 hover:bg-[rgba(248,245,240,0.96)] hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-8" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <Building2 size={32} className="lucide-building-2 text-secondary-foreground group-hover:text-primary transition-colors mb-4" aria-hidden="true" />
               <h3 className="text-lg font-heading font-semibold text-foreground mb-2">
                 Government
@@ -93,7 +93,7 @@ export function Industries() {
                 Forms, files, public requests
               </p>
             </motion.div>
-            <motion.div className="group p-6 bg-muted rounded-2xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-clay hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-9" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="group p-6 bg-[rgba(248,245,240,0.85)] backdrop-blur-md rounded-2xl border border-[rgba(107,30,50,0.12)] shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_12px_32px_-10px_rgba(69,19,35,0.06)] hover:border-primary/35 hover:bg-[rgba(248,245,240,0.96)] hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-9" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <Ship size={32} className="text-secondary-foreground group-hover:text-primary transition-colors mb-4" aria-hidden="true" />
               <h3 className="text-lg font-heading font-semibold text-foreground mb-2">
                 Seafood Export
@@ -102,7 +102,7 @@ export function Industries() {
                 Buyers, pricing, export documents
               </p>
             </motion.div>
-            <motion.div className="group p-6 bg-muted rounded-2xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-clay hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-10" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="group p-6 bg-[rgba(248,245,240,0.85)] backdrop-blur-md rounded-2xl border border-[rgba(107,30,50,0.12)] shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_12px_32px_-10px_rgba(69,19,35,0.06)] hover:border-primary/35 hover:bg-[rgba(248,245,240,0.96)] hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-10" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <House size={32} className="text-secondary-foreground group-hover:text-primary transition-colors mb-4" aria-hidden="true" />
               <h3 className="text-lg font-heading font-semibold text-foreground mb-2">
                 Real Estate
@@ -111,7 +111,7 @@ export function Industries() {
                 Leads, listings, property reports
               </p>
             </motion.div>
-            <motion.div className="group p-6 bg-muted rounded-2xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-clay hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-11" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="group p-6 bg-[rgba(248,245,240,0.85)] backdrop-blur-md rounded-2xl border border-[rgba(107,30,50,0.12)] shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_12px_32px_-10px_rgba(69,19,35,0.06)] hover:border-primary/35 hover:bg-[rgba(248,245,240,0.96)] hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="industry-card-11" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <Car size={32} className="text-secondary-foreground group-hover:text-primary transition-colors mb-4" aria-hidden="true" />
               <h3 className="text-lg font-heading font-semibold text-foreground mb-2">
                 Automotive

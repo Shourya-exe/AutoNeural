@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'wouter';
-import { ChevronRight, ArrowRight, CheckCircle2, Award, Briefcase, Linkedin } from 'lucide-react';
+import { ChevronRight, ArrowRight, CheckCircle2, Award, Briefcase, Linkedin, Layers } from 'lucide-react';
 import { FOUNDERS_DATA, type FounderProfile } from '@/data/founders';
 
 function initialsOf(name: string) {
@@ -18,8 +18,8 @@ export function FoundersContent() {
     <main className="flex-grow">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-background pb-16 pt-32 md:pb-20 md:pt-40">
-        <div className="absolute inset-0 bg-[linear-gradient(120deg,_rgba(238,221,196,0.72)_0%,_rgba(250,247,239,0.94)_52%,_rgba(244,235,219,0.86)_100%)]" />
-        <div className="pointer-events-none absolute -left-32 -top-24 h-[420px] w-[420px] rounded-full bg-primary/[0.09] blur-3xl" />
+        <div className="absolute inset-0 bg-[linear-gradient(120deg,_rgba(241,236,229,0.85)_0%,_rgba(248,245,240,0.96)_52%,_rgba(241,236,229,0.75)_100%)]" />
+        <div className="pointer-events-none absolute -left-32 -top-24 h-[420px] w-[420px] rounded-full bg-primary/[0.08] blur-3xl" />
         <div className="absolute bottom-0 left-0 h-24 w-full bg-gradient-to-t from-background to-transparent" />
 
         <div className="container relative z-10 mx-auto px-6 md:px-12">
@@ -51,7 +51,7 @@ export function FoundersContent() {
           >
             <Link
               href="/about"
-              className="rounded-full border border-border bg-card/60 px-4 py-1.5 font-mono text-xs font-semibold uppercase tracking-wider text-secondary-foreground hover:border-foreground hover:text-foreground transition-all"
+              className="rounded-full border border-[rgba(107,30,50,0.14)] bg-[rgba(248,245,240,0.7)] px-4 py-1.5 font-mono text-xs font-semibold uppercase tracking-wider text-secondary-foreground backdrop-blur-sm hover:border-primary hover:text-primary transition-all"
             >
               About Overview
             </Link>
@@ -59,11 +59,11 @@ export function FoundersContent() {
               className="rounded-full border border-primary bg-primary/10 px-4 py-1.5 font-mono text-xs font-semibold uppercase tracking-wider text-primary shadow-sm"
               aria-current="page"
             >
-              Founders & Leadership
+              Founders &amp; Leadership
             </span>
             <Link
               href="/team-members"
-              className="rounded-full border border-border bg-card/60 px-4 py-1.5 font-mono text-xs font-semibold uppercase tracking-wider text-secondary-foreground hover:border-foreground hover:text-foreground transition-all"
+              className="rounded-full border border-[rgba(107,30,50,0.14)] bg-[rgba(248,245,240,0.7)] px-4 py-1.5 font-mono text-xs font-semibold uppercase tracking-wider text-secondary-foreground backdrop-blur-sm hover:border-primary hover:text-primary transition-all"
             >
               Team Directory
             </Link>
@@ -84,7 +84,7 @@ export function FoundersContent() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.15 }}
           >
-            Meet the people behind{' '}
+            The people steering{' '}
             <span className="block text-primary">Autoneural.</span>
           </motion.h1>
 
@@ -94,7 +94,7 @@ export function FoundersContent() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
           >
-            Autoneural is built by a team focused on practical AI systems, autonomous agents, and custom software that solve real operational bottlenecks and earn their cost from day one.
+            Executive vision, AI systems engineering, and client growth leadership behind every platform we deploy.
           </motion.p>
 
           <motion.div
@@ -105,14 +105,14 @@ export function FoundersContent() {
           >
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-7 py-3.5 text-sm font-semibold text-background shadow-clay transition-all duration-300 hover:-translate-y-1 hover:bg-accent hover:shadow-clay-hover md:text-base"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground border border-white/20 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.35),0_6px_18px_-4px_rgba(107,30,50,0.35)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#8B3048] hover:shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.5),0_10px_24px_-4px_rgba(107,30,50,0.45)] md:text-base"
             >
-              Start a conversation
+              Speak with leadership
               <ArrowRight size={17} aria-hidden="true" />
             </Link>
             <Link
               href="/team-members"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-border bg-card/60 px-7 py-3.5 text-sm font-semibold text-foreground backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-foreground hover:bg-card md:text-base"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-[rgba(107,30,50,0.14)] bg-[rgba(248,245,240,0.75)] px-7 py-3.5 text-sm font-semibold text-foreground backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:text-primary md:text-base"
             >
               View Engineering Team
             </Link>
@@ -120,29 +120,29 @@ export function FoundersContent() {
         </div>
       </section>
 
-      {/* Leadership Grid Section */}
-      <section className="py-24 bg-background border-t border-border/60" data-testid="founders-section">
+      {/* Profiles Grid */}
+      <section className="py-24 bg-background border-t border-[rgba(107,30,50,0.12)]" data-testid="founders-grid-section">
         <div className="container mx-auto px-6 md:px-12">
-          <div className="mb-16 max-w-3xl">
-            <p className="mb-3 font-mono text-xs font-semibold uppercase tracking-[0.22em] text-primary">
-              Executive Leadership
+          <div className="mb-16 text-center max-w-2xl mx-auto">
+            <p className="mb-2 font-mono text-xs font-semibold uppercase tracking-[0.22em] text-primary">
+              Core Leadership
             </p>
-            <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Hands-on leadership, pragmatic engineering.
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+              Founding Partners
             </h2>
-            <p className="text-secondary-foreground text-base md:text-lg leading-relaxed">
-              We scope honestly, architect in the open, and ensure every solution delivers measurable business value.
+            <p className="text-secondary-foreground text-base">
+              A balanced team of system architects, product engineers, and commercial strategists.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
             {FOUNDERS_DATA.map((profile: FounderProfile, idx) => {
               const isFounderCmo = profile.id === 'founder-cmo';
               return (
                 <motion.div
                   key={profile.id}
                   data-testid={`founder-card-${profile.id}`}
-                  className="group relative bg-[#FAF9F6] border border-border rounded-3xl overflow-hidden shadow-clay hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-500 flex flex-col justify-between"
+                  className="group relative bg-[rgba(248,245,240,0.85)] backdrop-blur-md border border-[rgba(107,30,50,0.14)] rounded-3xl overflow-hidden shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_18px_45px_-12px_rgba(69,19,35,0.08)] hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-500 flex flex-col justify-between"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: '-50px' }}
@@ -170,8 +170,8 @@ export function FoundersContent() {
                           <span className="font-heading font-bold text-6xl md:text-7xl text-primary/30 select-none tracking-tight">
                             {initialsOf(profile.name)}
                           </span>
-                          <span className="mt-2 font-mono text-xs uppercase tracking-widest text-slate-400">
-                            Leadership Profile
+                          <span className="mt-2 font-mono text-[10px] uppercase tracking-widest text-slate-400">
+                            {profile.role}
                           </span>
                         </div>
                       )}
@@ -183,71 +183,51 @@ export function FoundersContent() {
                       )}
                     </div>
 
-                    {/* Card Content */}
+                    {/* Content */}
                     <div className="p-8">
                       <p className="text-primary font-mono text-xs font-semibold uppercase tracking-widest mb-2">
                         {profile.role}
                       </p>
-                      <h3 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-3">
+                      <h3 className="text-2xl font-heading font-bold text-foreground mb-4">
                         {profile.name}
                       </h3>
-
-                      {/* Short Professional Intro */}
-                      <p className="text-secondary-foreground leading-relaxed text-sm md:text-base mb-6 font-medium">
+                      <p className="text-secondary-foreground leading-relaxed text-sm mb-6">
                         {profile.shortIntro}
                       </p>
 
-                      {/* About Section */}
-                      <div className="mb-6 pt-5 border-t border-border/60">
-                        <h4 className="text-xs font-mono uppercase tracking-wider text-slate-500 font-semibold mb-2 flex items-center gap-1.5">
-                          <Briefcase size={14} className="text-primary" />
-                          About
+                      <div className="mb-6 pt-4 border-t border-[rgba(107,30,50,0.12)]">
+                        <h4 className="text-xs font-mono uppercase tracking-wider text-slate-500 font-semibold mb-2.5 flex items-center gap-1.5">
+                          <CheckCircle2 size={13} className="text-primary" />
+                          Key Responsibilities
                         </h4>
-                        <p className="text-sm leading-relaxed text-secondary-foreground">
-                          {profile.about}
-                        </p>
-                      </div>
-
-                      {/* Key Responsibilities */}
-                      <div className="mb-6 pt-5 border-t border-border/60">
-                        <h4 className="text-xs font-mono uppercase tracking-wider text-slate-500 font-semibold mb-3 flex items-center gap-1.5">
-                          <CheckCircle2 size={14} className="text-primary" />
-                          Core Responsibilities &amp; Focus
-                        </h4>
-                        <ul className="space-y-2">
-                          {profile.responsibilities.map((resp, i) => (
-                            <li key={i} className="flex items-start gap-2 text-xs leading-relaxed text-secondary-foreground">
-                              <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0" />
+                        <ul className="space-y-1.5">
+                          {profile.responsibilities.map((resp, rIdx) => (
+                            <li key={rIdx} className="text-xs text-secondary-foreground flex items-start gap-2">
+                              <span className="h-1.5 w-1.5 rounded-full bg-primary mt-1.5 flex-shrink-0" />
                               <span>{resp}</span>
                             </li>
                           ))}
                         </ul>
                       </div>
 
-                      {/* Relevant Experience */}
-                      <div className="pt-5 border-t border-border/60">
-                        <h4 className="text-xs font-mono uppercase tracking-wider text-slate-500 font-semibold mb-3 flex items-center gap-1.5">
-                          <Award size={14} className="text-primary" />
-                          Relevant Experience
+                      <div className="pt-4 border-t border-[rgba(107,30,50,0.12)]">
+                        <h4 className="text-xs font-mono uppercase tracking-wider text-slate-500 font-semibold mb-2 flex items-center gap-1.5">
+                          <Layers size={13} className="text-primary" />
+                          Strategic Focus
                         </h4>
-                        <ul className="space-y-2">
-                          {profile.relevantExperience.map((exp, i) => (
-                            <li key={i} className="flex items-start gap-2 text-xs leading-relaxed text-secondary-foreground">
-                              <span className="mt-1 h-1.5 w-1.5 rounded-full bg-secondary-foreground/60 flex-shrink-0" />
-                              <span>{exp}</span>
-                            </li>
-                          ))}
-                        </ul>
+                        <p className="text-xs leading-relaxed text-secondary-foreground">
+                          {profile.about}
+                        </p>
                       </div>
                     </div>
                   </div>
 
-                  {/* LinkedIn / Social Link */}
+                  {/* LinkedIn Link */}
                   <div className="px-8 pb-8 pt-2">
                     {profile.linkedin ? (
                       <a
                         href={profile.linkedin}
-                        className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline underline-offset-4 transition-all"
+                        className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-[#8B3048] hover:underline underline-offset-4 transition-all"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -255,8 +235,8 @@ export function FoundersContent() {
                         LinkedIn Profile
                       </a>
                     ) : (
-                      <span className="inline-flex items-center gap-2 text-xs font-mono text-slate-400">
-                        Autoneural Executive Office
+                      <span className="inline-flex items-center gap-1.5 text-xs font-mono text-slate-400">
+                        Autoneural Leadership
                       </span>
                     )}
                   </div>
@@ -268,7 +248,7 @@ export function FoundersContent() {
       </section>
 
       {/* Philosophy / CTA Section */}
-      <section className="py-20 bg-muted/40 border-t border-border">
+      <section className="py-20 bg-[rgba(241,236,229,0.5)] border-t border-[rgba(107,30,50,0.12)]">
         <div className="container mx-auto px-6 md:px-12 text-center max-w-3xl">
           <h3 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-4">
             Building systems that earn their keep.
@@ -279,14 +259,14 @@ export function FoundersContent() {
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-7 py-3.5 text-sm font-semibold text-background shadow-clay transition-all hover:-translate-y-0.5 hover:bg-accent"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground border border-white/20 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.35),0_6px_18px_-4px_rgba(107,30,50,0.35)] transition-all hover:-translate-y-0.5 hover:bg-[#8B3048]"
             >
               Book a Discovery Call
               <ArrowRight size={16} />
             </Link>
             <Link
               href="/team-members"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-border bg-card px-7 py-3.5 text-sm font-semibold text-foreground transition-all hover:border-foreground"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-[rgba(107,30,50,0.14)] bg-[rgba(248,245,240,0.75)] px-7 py-3.5 text-sm font-semibold text-foreground backdrop-blur-md transition-all hover:border-primary hover:text-primary"
             >
               Meet the Broader Team
             </Link>

@@ -3,11 +3,7 @@
 @import 'tw-animate-css';
 
 /* ==========================================================================
-   Autoneural design system
-
-   Warm cream ground with a burnt-orange primary and a deep green accent.
-   Aivora (the voice-agent product) carries its own gold sub-palette so it
-   reads as a distinct brand-within-a-brand wherever it appears.
+   Autoneural Design System — Burgundy + Warm White + Liquid Glass
    ========================================================================== */
 
 @theme inline {
@@ -46,6 +42,16 @@
   --color-input: hsl(var(--input));
   --color-ring: hsl(var(--ring));
 
+  /* Theme Palette Tokens */
+  --color-burgundy: #6B1E32;
+  --color-burgundy-deep: #451323;
+  --color-burgundy-accent: #8B3048;
+  --color-warm-white: #F8F5F0;
+  --color-soft-cream: #F1ECE5;
+  --color-text-primary: #2B2022;
+  --color-text-secondary: #75686A;
+  --color-divider: rgba(107, 30, 50, 0.12);
+
   /* Aivora sub-brand */
   --color-aivora: var(--aivora-gold);
   --color-aivora-deep: var(--aivora-gold-deep);
@@ -63,46 +69,58 @@
 
   --shadow-clay: var(--shadow-clay);
   --shadow-clay-hover: var(--shadow-clay-hover);
+  --shadow-glass: var(--shadow-glass);
+  --shadow-glass-hover: var(--shadow-glass-hover);
 
   --animate-marquee: marquee 30s linear infinite;
 }
 
 :root {
-  --button-outline: #0000001a;
-  --badge-outline: #0000000d;
+  --button-outline: rgba(107, 30, 50, 0.16);
+  --badge-outline: rgba(107, 30, 50, 0.12);
   --opaque-button-border-intensity: -8;
-  --elevate-1: #00000008;
-  --elevate-2: #00000014;
+  --elevate-1: rgba(107, 30, 50, 0.04);
+  --elevate-2: rgba(107, 30, 50, 0.08);
 
-  --background: 42 38% 95%;
-  --foreground: 24 31% 7%;
-  --border: 34 24% 84%;
+  /* Warm White #F8F5F0 */
+  --background: 38 38% 96%;
+  /* Primary Text #2B2022 */
+  --foreground: 349 15% 15%;
+  /* Subtle Divider rgba(107, 30, 50, 0.12) */
+  --border: 345 20% 86%;
 
-  --card: 40 35% 97%;
-  --card-foreground: 24 31% 7%;
-  --card-border: 34 24% 84%;
+  /* Soft Cream #F1ECE5 / Warm-White Card ground */
+  --card: 35 29% 94%;
+  --card-foreground: 349 15% 15%;
+  --card-border: rgba(107, 30, 50, 0.12);
 
-  --popover: 40 35% 97%;
-  --popover-foreground: 24 31% 7%;
-  --popover-border: 34 24% 84%;
+  --popover: 38 38% 96%;
+  --popover-foreground: 349 15% 15%;
+  --popover-border: rgba(107, 30, 50, 0.12);
 
-  --primary: 22 71% 49%;
-  --primary-foreground: 42 38% 95%;
+  /* Primary Burgundy #6B1E32 */
+  --primary: 344 56% 27%;
+  /* Warm White #F8F5F0 */
+  --primary-foreground: 38 38% 96%;
 
-  --secondary: 39 31% 91%;
-  --secondary-foreground: 23 13% 38%;
+  /* Soft Cream #F1ECE5 */
+  --secondary: 35 29% 92%;
+  /* Secondary Text #75686A */
+  --secondary-foreground: 351 6% 43%;
 
-  --muted: 40 35% 93%;
-  --muted-foreground: 23 13% 38%;
+  /* Muted #EFE9E1 */
+  --muted: 35 25% 91%;
+  --muted-foreground: 351 6% 43%;
 
-  --accent: 158 28% 22%;
-  --accent-foreground: 42 38% 95%;
+  /* Burgundy Accent #8B3048 */
+  --accent: 344 49% 37%;
+  --accent-foreground: 38 38% 96%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 
-  --input: 38 17% 89%;
-  --ring: 22 71% 49%;
+  --input: 345 20% 86%;
+  --ring: 344 56% 27%;
 
   --app-font-sans: 'Inter', sans-serif;
   --app-font-serif: 'Cormorant Garamond', Georgia, serif;
@@ -116,43 +134,56 @@
 
   --radius: 0.5rem;
 
-  /* Soft, warm elevation — the "clay" look used on every raised card. */
+  /* Liquid Glass Elevation: Layered depth, soft Burgundy blur, and top light reflection */
   --shadow-clay:
-    0 18px 60px #2d1c0e14, 0 8px 24px #2d1c0e0d, inset 0 1px 0 #ffffffb8;
+    0 18px 45px -12px rgba(69, 19, 35, 0.08),
+    0 6px 18px -4px rgba(69, 19, 35, 0.04),
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.9);
   --shadow-clay-hover:
-    0 26px 80px #2d1c0e21, 0 12px 30px #2d1c0e14, inset 0 1px 0 #ffffffb8;
+    0 26px 65px -10px rgba(69, 19, 35, 0.13),
+    0 10px 24px -4px rgba(69, 19, 35, 0.07),
+    inset 0 1px 2px 0 rgba(255, 255, 255, 1);
+
+  --shadow-glass:
+    0 20px 40px -15px rgba(69, 19, 35, 0.08),
+    0 0 0 1px rgba(255, 255, 255, 0.7) inset,
+    0 1px 1px 0 rgba(255, 255, 255, 0.9) inset;
+  --shadow-glass-hover:
+    0 26px 55px -12px rgba(69, 19, 35, 0.14),
+    0 0 0 1px rgba(255, 255, 255, 0.9) inset,
+    0 1px 2px 0 rgba(255, 255, 255, 1) inset;
 
   --sidebar-primary-border: hsl(var(--primary));
   --sidebar-accent-border: hsl(var(--accent));
-  --primary-border: hsl(var(--primary));
-  --secondary-border: hsl(var(--secondary));
-  --muted-border: hsl(var(--muted));
-  --accent-border: hsl(var(--accent));
+  --primary-border: #451323;
+  --secondary-border: rgba(107, 30, 50, 0.12);
+  --muted-border: rgba(107, 30, 50, 0.08);
+  --accent-border: #8B3048;
   --destructive-border: hsl(var(--destructive));
 }
 
 .dark {
-  --background: 0 0% 12%;
-  --foreground: 45 14% 97%;
-  --border: 0 0% 20%;
-  --card: 0 0% 15%;
-  --card-foreground: 45 14% 97%;
-  --card-border: 0 0% 20%;
-  --popover: 0 0% 15%;
-  --popover-foreground: 45 14% 97%;
-  --popover-border: 0 0% 20%;
-  --primary: 228 77% 55%;
-  --primary-foreground: 0 0% 100%;
-  --secondary: 0 0% 20%;
-  --secondary-foreground: 0 0% 80%;
-  --muted: 0 0% 20%;
-  --muted-foreground: 0 0% 80%;
-  --accent: 215 33% 50%;
-  --accent-foreground: 0 0% 100%;
+  --background: 341 57% 12%;
+  --foreground: 38 38% 96%;
+  --border: 341 35% 22%;
+  --card: 341 50% 15%;
+  --card-foreground: 38 38% 96%;
+  --card-border: rgba(255, 255, 255, 0.08);
+  --popover: 341 50% 15%;
+  --popover-foreground: 38 38% 96%;
+  --popover-border: rgba(255, 255, 255, 0.08);
+  --primary: 344 56% 40%;
+  --primary-foreground: 38 38% 96%;
+  --secondary: 341 40% 20%;
+  --secondary-foreground: 35 29% 85%;
+  --muted: 341 40% 18%;
+  --muted-foreground: 35 29% 75%;
+  --accent: 344 49% 45%;
+  --accent-foreground: 38 38% 96%;
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
-  --input: 0 0% 20%;
-  --ring: 228 77% 55%;
+  --input: 341 35% 22%;
+  --ring: 344 56% 40%;
 }
 
 @layer base {
@@ -161,16 +192,16 @@
   }
 
   body {
-    background-color: hsl(var(--background));
+    background-color: #F8F5F0;
     font-family: var(--app-font-sans);
-    color: hsl(var(--foreground));
+    color: #2B2022;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    /* Faint warm graph paper under everything, at 72px pitch. */
+    /* Delicate Burgundy graph paper at 72px pitch */
     background-image:
-      linear-gradient(90deg, #8252240a 1px, #0000 1px),
-      linear-gradient(#82522409 1px, #0000 1px);
+      linear-gradient(90deg, rgba(107, 30, 50, 0.035) 1px, transparent 1px),
+      linear-gradient(rgba(107, 30, 50, 0.035) 1px, transparent 1px);
     background-size: 72px 72px;
   }
 
@@ -184,12 +215,110 @@
   }
 }
 
+/* ==========================================================================
+   Liquid Glass & Glassmorphism Surfaces
+   ========================================================================== */
+
+.glass-surface {
+  background: linear-gradient(135deg, rgba(248, 245, 240, 0.88) 0%, rgba(241, 236, 229, 0.72) 100%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  backdrop-filter: blur(16px) saturate(160%);
+  border: 1px solid rgba(107, 30, 50, 0.12);
+  box-shadow:
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.9),
+    0 16px 36px -12px rgba(69, 19, 35, 0.07);
+}
+
+.glass-surface-hover:hover {
+  background: linear-gradient(135deg, rgba(248, 245, 240, 0.95) 0%, rgba(241, 236, 229, 0.82) 100%);
+  border-color: rgba(107, 30, 50, 0.2);
+  box-shadow:
+    inset 0 1px 2px 0 rgba(255, 255, 255, 1),
+    0 22px 50px -10px rgba(69, 19, 35, 0.12);
+}
+
+.liquid-glass-card {
+  position: relative;
+  background: linear-gradient(145deg, rgba(248, 245, 240, 0.88) 0%, rgba(241, 236, 229, 0.72) 100%);
+  -webkit-backdrop-filter: blur(20px) saturate(165%);
+  backdrop-filter: blur(20px) saturate(165%);
+  border: 1px solid rgba(107, 30, 50, 0.12);
+  box-shadow:
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.9),
+    0 18px 45px -15px rgba(69, 19, 35, 0.08),
+    0 6px 18px -6px rgba(69, 19, 35, 0.04);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.liquid-glass-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(107, 30, 50, 0.22);
+  box-shadow:
+    inset 0 1px 2px 0 rgba(255, 255, 255, 1),
+    0 28px 65px -12px rgba(69, 19, 35, 0.14),
+    0 12px 28px -6px rgba(69, 19, 35, 0.08);
+}
+
+.liquid-glass-nav {
+  background: linear-gradient(135deg, rgba(248, 245, 240, 0.84) 0%, rgba(241, 236, 229, 0.72) 100%);
+  -webkit-backdrop-filter: blur(22px) saturate(175%);
+  backdrop-filter: blur(22px) saturate(175%);
+  border: 1px solid rgba(107, 30, 50, 0.12);
+  box-shadow:
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.85),
+    0 12px 32px -8px rgba(69, 19, 35, 0.06);
+}
+
+.burgundy-glass-btn {
+  background: linear-gradient(135deg, #8B3048 0%, #6B1E32 55%, #451323 100%);
+  color: #F8F5F0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow:
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.4),
+    0 8px 20px -4px rgba(107, 30, 50, 0.35);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.burgundy-glass-btn:hover {
+  background: linear-gradient(135deg, #9C3852 0%, #7B233A 55%, #52172A 100%);
+  box-shadow:
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.55),
+    0 12px 28px -4px rgba(107, 30, 50, 0.45);
+  transform: translateY(-1px);
+}
+
+.liquid-glass-btn-secondary {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.65) 0%, rgba(248, 245, 240, 0.45) 100%);
+  color: #2B2022;
+  border: 1px solid rgba(107, 30, 50, 0.16);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  box-shadow:
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.9),
+    0 4px 12px -2px rgba(69, 19, 35, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.liquid-glass-btn-secondary:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(248, 245, 240, 0.65) 100%);
+  border-color: rgba(107, 30, 50, 0.3);
+  color: #6B1E32;
+  box-shadow:
+    inset 0 1px 2px 0 rgba(255, 255, 255, 1),
+    0 8px 18px -4px rgba(69, 19, 35, 0.08);
+  transform: translateY(-1px);
+}
+
+.liquid-glass-pill {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(248, 245, 240, 0.5) 100%);
+  border: 1px solid rgba(107, 30, 50, 0.14);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.8);
+}
+
 /* --------------------------------------------------------------------------
    Aivora surfaces
-
-   A frosted panel with a gradient hairline border. The border uses two
-   backgrounds (padding-box + border-box) because a plain border cannot take a
-   gradient; `isolation: isolate` keeps the blur from sampling siblings.
    -------------------------------------------------------------------------- */
 .aivora-panel {
   isolation: isolate;
@@ -225,7 +354,6 @@
   background-clip: text;
 }
 
-/* Gold grid, faded top and bottom so it never meets a section edge hard. */
 .aivora-grid {
   background-image:
     linear-gradient(#c9a06317 1px, #0000 1px),
@@ -235,7 +363,6 @@
   mask-image: linear-gradient(#0000, #000 16% 78%, #0000);
 }
 
-/* Tabular figures, so live-updating numbers do not jitter. */
 .aivora-numerals {
   font-variant-numeric: tabular-nums;
 }

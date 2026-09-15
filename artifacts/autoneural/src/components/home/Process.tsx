@@ -5,7 +5,7 @@ export function Process() {
   return (
     <section id="process" className="relative scroll-mt-28 overflow-hidden bg-[#191b1f] py-24 text-white" data-testid="process-section">
       <div className="absolute inset-0 bg-[repeating-linear-gradient(135deg,rgba(255,255,255,0.035)_0,rgba(255,255,255,0.035)_2px,transparent_2px,transparent_10px)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(37,211,102,0.10),transparent_34%),radial-gradient(circle_at_85%_65%,rgba(211,106,38,0.12),transparent_28%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(37,211,102,0.08),transparent_34%),radial-gradient(circle_at_85%_65%,rgba(107,30,50,0.18),transparent_32%)]" />
       <div className="relative z-10 mx-auto max-w-[1500px] px-6 md:px-12">
         <div className="mb-10 grid gap-7 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>

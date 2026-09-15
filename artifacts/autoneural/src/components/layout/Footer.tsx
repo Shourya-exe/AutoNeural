@@ -3,7 +3,7 @@ import { NewsletterForm } from './NewsletterForm';
 
 export function Footer() {
   return (
-      <footer className="border-t border-border bg-background pb-12 pt-24" data-testid="footer">
+      <footer className="border-t border-[rgba(107,30,50,0.12)] bg-[linear-gradient(180deg,_rgba(248,245,240,0.4)_0%,_rgba(241,236,229,0.75)_100%)] pb-12 pt-24" data-testid="footer">
         <div className="container mx-auto px-6 md:px-12">
           <div className="mb-16 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-6 lg:gap-8">
             <div className="lg:col-span-2">
@@ -148,7 +148,7 @@ export function Footer() {
               <NewsletterForm />
             </div>
           </div>
-          <div className="flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-sm text-secondary-foreground md:flex-row">
+          <div className="flex flex-col items-center justify-between gap-4 border-t border-[rgba(107,30,50,0.12)] pt-8 text-sm text-secondary-foreground md:flex-row">
             <p>
               © 2026 Autoneural. All rights reserved.
             </p>

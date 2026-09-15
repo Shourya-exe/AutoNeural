@@ -5,7 +5,7 @@ import { ArrowRight, CalendarCheck, Database, Mic, PhoneCall, PhoneOff, Volume2 
 export function AivoraSpotlight() {
   return (
       <section id="aivora" className="relative overflow-hidden border-y border-aivora/25 py-24 md:py-28" data-testid="aivora-spotlight">
-        <div className="absolute inset-0 bg-[linear-gradient(125deg,_rgba(240,226,203,0.9)_0%,_rgba(250,247,239,0.95)_48%,_rgba(233,218,193,0.9)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(125deg,_rgba(241,236,229,0.85)_0%,_rgba(248,245,240,0.96)_48%,_rgba(241,236,229,0.9)_100%)]" />
         <div className="pointer-events-none absolute -left-24 top-0 h-[420px] w-[420px] rounded-full bg-aivora/[0.16] blur-3xl" />
         <div className="pointer-events-none absolute -bottom-28 right-0 h-[380px] w-[380px] rounded-full bg-primary/[0.08] blur-3xl" />
         <div className="container relative z-10 mx-auto px-6 md:px-12">

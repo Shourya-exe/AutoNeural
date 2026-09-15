@@ -5,7 +5,7 @@ import { ArrowRight, Blocks, ClipboardList, Cog, MessageSquareQuote, Rocket, Shi
 export function CustomAgents() {
   return (
       <section id="custom-agents" className="relative overflow-hidden border-y border-primary/20 py-24 md:py-28" data-testid="custom-agents-section">
-        <div className="absolute inset-0 bg-[linear-gradient(125deg,_rgba(238,221,196,0.85)_0%,_rgba(250,247,239,0.95)_45%,_rgba(230,214,190,0.9)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(125deg,_rgba(241,236,229,0.85)_0%,_rgba(248,245,240,0.96)_45%,_rgba(241,236,229,0.9)_100%)]" />
         <div className="pointer-events-none absolute -left-24 -top-24 h-[460px] w-[460px] rounded-full bg-primary/[0.12] blur-3xl" />
         <div className="pointer-events-none absolute -bottom-32 right-0 h-[420px] w-[420px] rounded-full bg-accent/[0.12] blur-3xl" />
         <div className="container relative z-10 mx-auto px-6 md:px-12">

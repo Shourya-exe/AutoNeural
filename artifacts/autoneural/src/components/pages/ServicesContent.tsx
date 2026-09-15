@@ -8,8 +8,8 @@ export function ServicesContent() {
   return (
       <main className="flex-grow">
         <section className="relative overflow-hidden bg-background pb-16 pt-32 md:pb-20 md:pt-40">
-          <div className="absolute inset-0 bg-[linear-gradient(120deg,_rgba(238,221,196,0.72)_0%,_rgba(250,247,239,0.94)_52%,_rgba(244,235,219,0.86)_100%)]" />
-          <div className="pointer-events-none absolute -left-32 -top-24 h-[420px] w-[420px] rounded-full bg-primary/[0.09] blur-3xl" />
+          <div className="absolute inset-0 bg-[linear-gradient(120deg,_rgba(241,236,229,0.85)_0%,_rgba(248,245,240,0.96)_52%,_rgba(241,236,229,0.75)_100%)]" />
+          <div className="pointer-events-none absolute -left-32 -top-24 h-[420px] w-[420px] rounded-full bg-primary/[0.08] blur-3xl" />
           <div className="absolute bottom-0 left-0 h-24 w-full bg-gradient-to-t from-background to-transparent" />
           <div className="container relative z-10 mx-auto px-6 md:px-12">
             <motion.nav className="mb-8 flex items-center gap-2 font-mono text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-secondary-foreground" aria-label="Breadcrumb" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
@@ -230,9 +230,9 @@ export function ServicesContent() {
           </div>
         </section>
         <section id="custom-agents" className="relative overflow-hidden border-y border-primary/20 py-24 md:py-28" data-testid="custom-agents-section">
-          <div className="absolute inset-0 bg-[linear-gradient(125deg,_rgba(238,221,196,0.85)_0%,_rgba(250,247,239,0.95)_45%,_rgba(230,214,190,0.9)_100%)]" />
-          <div className="pointer-events-none absolute -left-24 -top-24 h-[460px] w-[460px] rounded-full bg-primary/[0.12] blur-3xl" />
-          <div className="pointer-events-none absolute -bottom-32 right-0 h-[420px] w-[420px] rounded-full bg-accent/[0.12] blur-3xl" />
+          <div className="absolute inset-0 bg-[linear-gradient(125deg,_rgba(241,236,229,0.85)_0%,_rgba(248,245,240,0.96)_45%,_rgba(241,236,229,0.8)_100%)]" />
+          <div className="pointer-events-none absolute -left-24 -top-24 h-[460px] w-[460px] rounded-full bg-primary/[0.08] blur-3xl" />
+          <div className="pointer-events-none absolute -bottom-32 right-0 h-[420px] w-[420px] rounded-full bg-accent/[0.08] blur-3xl" />
           <div className="container relative z-10 mx-auto px-6 md:px-12">
             <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-16">
               <div>
@@ -373,7 +373,7 @@ export function ServicesContent() {
         </section>
         <section id="process" className="relative scroll-mt-28 overflow-hidden bg-[#191b1f] py-24 text-white" data-testid="process-section">
           <div className="absolute inset-0 bg-[repeating-linear-gradient(135deg,rgba(255,255,255,0.035)_0,rgba(255,255,255,0.035)_2px,transparent_2px,transparent_10px)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(37,211,102,0.10),transparent_34%),radial-gradient(circle_at_85%_65%,rgba(211,106,38,0.12),transparent_28%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(139,48,72,0.18),transparent_38%),radial-gradient(circle_at_85%_65%,rgba(107,30,50,0.22),transparent_32%)]" />
           <div className="relative z-10 mx-auto max-w-[1500px] px-6 md:px-12">
             <div className="mb-10 grid gap-7 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
               <div>

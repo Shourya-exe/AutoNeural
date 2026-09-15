@@ -15,7 +15,7 @@ export function Testimonials() {
             <div className="mx-auto h-1 w-20 rounded-full bg-primary" style={{ width: '0px' }} />
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-            <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-clay" data-testid="testimonial-card-0" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay-hover" data-testid="testimonial-card-0" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <Quote size={64} className="pointer-events-none absolute -right-3 -top-3 text-primary/[0.07] transition-colors duration-500 group-hover:text-primary/[0.13]" aria-hidden="true" />
               <div className="relative z-10 mb-5 flex items-center gap-3">
                 <div className="flex gap-0.5">
@@ -46,7 +46,7 @@ export function Testimonials() {
                 </div>
               </div>
             </motion.div>
-            <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-clay" data-testid="testimonial-card-1" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay-hover" data-testid="testimonial-card-1" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <Quote size={64} className="pointer-events-none absolute -right-3 -top-3 text-primary/[0.07] transition-colors duration-500 group-hover:text-primary/[0.13]" aria-hidden="true" />
               <div className="relative z-10 mb-5 flex items-center gap-3">
                 <div className="flex gap-0.5">
@@ -77,7 +77,7 @@ export function Testimonials() {
                 </div>
               </div>
             </motion.div>
-            <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-clay" data-testid="testimonial-card-2" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay-hover" data-testid="testimonial-card-2" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <Quote size={64} className="pointer-events-none absolute -right-3 -top-3 text-primary/[0.07] transition-colors duration-500 group-hover:text-primary/[0.13]" aria-hidden="true" />
               <div className="relative z-10 mb-5 flex items-center gap-3">
                 <div className="flex gap-0.5">
@@ -108,7 +108,7 @@ export function Testimonials() {
                 </div>
               </div>
             </motion.div>
-            <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-clay" data-testid="testimonial-card-3" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay-hover" data-testid="testimonial-card-3" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <Quote size={64} className="pointer-events-none absolute -right-3 -top-3 text-primary/[0.07] transition-colors duration-500 group-hover:text-primary/[0.13]" aria-hidden="true" />
               <div className="relative z-10 mb-5 flex items-center gap-3">
                 <div className="flex gap-0.5">
@@ -139,7 +139,7 @@ export function Testimonials() {
                 </div>
               </div>
             </motion.div>
-            <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-clay" data-testid="testimonial-card-4" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay-hover" data-testid="testimonial-card-4" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <Quote size={64} className="pointer-events-none absolute -right-3 -top-3 text-primary/[0.07] transition-colors duration-500 group-hover:text-primary/[0.13]" aria-hidden="true" />
               <div className="relative z-10 mb-5 flex items-center gap-3">
                 <div className="flex gap-0.5">
@@ -170,7 +170,7 @@ export function Testimonials() {
                 </div>
               </div>
             </motion.div>
-            <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-clay" data-testid="testimonial-card-5" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay-hover" data-testid="testimonial-card-5" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <Quote size={64} className="pointer-events-none absolute -right-3 -top-3 text-primary/[0.07] transition-colors duration-500 group-hover:text-primary/[0.13]" aria-hidden="true" />
               <div className="relative z-10 mb-5 flex items-center gap-3">
                 <div className="flex gap-0.5">

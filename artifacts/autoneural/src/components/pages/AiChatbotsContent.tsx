@@ -8,7 +8,7 @@ export function AiChatbotsContent() {
   return (
       <main className="flex-grow">
         <section className="relative overflow-hidden bg-background pb-16 pt-32 md:pb-20 md:pt-40">
-          <div className="absolute inset-0 bg-[linear-gradient(120deg,_rgba(238,221,196,0.72)_0%,_rgba(250,247,239,0.94)_52%,_rgba(244,235,219,0.86)_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(120deg,_rgba(241,236,229,0.85)_0%,_rgba(248,245,240,0.96)_52%,_rgba(241,236,229,0.75)_100%)]" />
           <div className="pointer-events-none absolute -left-32 -top-24 h-[420px] w-[420px] rounded-full bg-primary/[0.09] blur-3xl" />
           <div className="absolute bottom-0 left-0 h-24 w-full bg-gradient-to-t from-background to-transparent" />
           <div className="container relative z-10 mx-auto px-6 md:px-12">
@@ -45,7 +45,7 @@ export function AiChatbotsContent() {
           </div>
         </section>
         <section id="custom-agents" className="relative overflow-hidden border-y border-primary/20 py-24 md:py-28" data-testid="custom-agents-section">
-          <div className="absolute inset-0 bg-[linear-gradient(125deg,_rgba(238,221,196,0.85)_0%,_rgba(250,247,239,0.95)_45%,_rgba(230,214,190,0.9)_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(125deg,_rgba(241,236,229,0.85)_0%,_rgba(248,245,240,0.96)_45%,_rgba(241,236,229,0.9)_100%)]" />
           <div className="pointer-events-none absolute -left-24 -top-24 h-[460px] w-[460px] rounded-full bg-primary/[0.12] blur-3xl" />
           <div className="pointer-events-none absolute -bottom-32 right-0 h-[420px] w-[420px] rounded-full bg-accent/[0.12] blur-3xl" />
           <div className="container relative z-10 mx-auto px-6 md:px-12">
@@ -221,8 +221,8 @@ export function AiChatbotsContent() {
                   </span>
                 </button>
                 <button type="button" className="group relative overflow-hidden rounded-2xl border p-5 text-left transition-all duration-300 border-border bg-card/55 hover:-translate-y-1 hover:border-primary/30 hover:bg-card hover:shadow-sm" data-testid="omnichannel-website" aria-pressed="false">
-                  <span className="absolute inset-x-0 top-0 h-[3px] origin-left transition-transform duration-300" style={{ background: 'rgb(211, 106, 38)', transform: 'scaleX(0)' }} />
-                  <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl transition-colors" style={{ backgroundColor: 'rgba(211, 106, 38, 0.1)', color: 'rgb(211, 106, 38)' }}>
+                  <span className="absolute inset-x-0 top-0 h-[3px] origin-left transition-transform duration-300" style={{ background: 'rgb(107, 30, 50)', transform: 'scaleX(0)' }} />
+                  <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl transition-colors" style={{ backgroundColor: 'rgba(107, 30, 50, 0.1)', color: 'rgb(107, 30, 50)' }}>
                     <Globe size={20} aria-hidden="true" />
                   </span>
                   <span className="block font-heading text-base font-semibold text-foreground">
@@ -816,7 +816,7 @@ export function AiChatbotsContent() {
                         </span>
                       </div>
                       <div className="h-1.5 w-full overflow-hidden rounded-full bg-white/10">
-                        <div className="h-full rounded-full" style={{ backgroundColor: 'rgb(211, 106, 38)', width: '0px' }} />
+                        <div className="h-full rounded-full" style={{ backgroundColor: 'rgb(139, 48, 72)', width: '0px' }} />
                       </div>
                     </div>
                     <div>
@@ -2161,7 +2161,7 @@ export function AiChatbotsContent() {
               <div className="mx-auto h-1 w-20 rounded-full bg-primary" style={{ width: '0px' }} />
             </div>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-clay" data-testid="testimonial-card-0" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay-hover" data-testid="testimonial-card-0" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
                 <Quote size={64} className="pointer-events-none absolute -right-3 -top-3 text-primary/[0.07] transition-colors duration-500 group-hover:text-primary/[0.13]" aria-hidden="true" />
                 <div className="relative z-10 mb-5 flex items-center gap-3">
                   <div className="flex gap-0.5">
@@ -2192,7 +2192,7 @@ export function AiChatbotsContent() {
                   </div>
                 </div>
               </motion.div>
-              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-clay" data-testid="testimonial-card-1" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay-hover" data-testid="testimonial-card-1" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
                 <Quote size={64} className="pointer-events-none absolute -right-3 -top-3 text-primary/[0.07] transition-colors duration-500 group-hover:text-primary/[0.13]" aria-hidden="true" />
                 <div className="relative z-10 mb-5 flex items-center gap-3">
                   <div className="flex gap-0.5">
@@ -2223,7 +2223,7 @@ export function AiChatbotsContent() {
                   </div>
                 </div>
               </motion.div>
-              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-clay" data-testid="testimonial-card-2" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay-hover" data-testid="testimonial-card-2" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
                 <Quote size={64} className="pointer-events-none absolute -right-3 -top-3 text-primary/[0.07] transition-colors duration-500 group-hover:text-primary/[0.13]" aria-hidden="true" />
                 <div className="relative z-10 mb-5 flex items-center gap-3">
                   <div className="flex gap-0.5">
@@ -2254,7 +2254,7 @@ export function AiChatbotsContent() {
                   </div>
                 </div>
               </motion.div>
-              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-clay" data-testid="testimonial-card-3" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay-hover" data-testid="testimonial-card-3" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
                 <Quote size={64} className="pointer-events-none absolute -right-3 -top-3 text-primary/[0.07] transition-colors duration-500 group-hover:text-primary/[0.13]" aria-hidden="true" />
                 <div className="relative z-10 mb-5 flex items-center gap-3">
                   <div className="flex gap-0.5">
@@ -2285,7 +2285,7 @@ export function AiChatbotsContent() {
                   </div>
                 </div>
               </motion.div>
-              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-clay" data-testid="testimonial-card-4" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay-hover" data-testid="testimonial-card-4" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
                 <Quote size={64} className="pointer-events-none absolute -right-3 -top-3 text-primary/[0.07] transition-colors duration-500 group-hover:text-primary/[0.13]" aria-hidden="true" />
                 <div className="relative z-10 mb-5 flex items-center gap-3">
                   <div className="flex gap-0.5">
@@ -2316,7 +2316,7 @@ export function AiChatbotsContent() {
                   </div>
                 </div>
               </motion.div>
-              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-clay" data-testid="testimonial-card-5" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay-hover" data-testid="testimonial-card-5" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
                 <Quote size={64} className="pointer-events-none absolute -right-3 -top-3 text-primary/[0.07] transition-colors duration-500 group-hover:text-primary/[0.13]" aria-hidden="true" />
                 <div className="relative z-10 mb-5 flex items-center gap-3">
                   <div className="flex gap-0.5">

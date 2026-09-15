@@ -93,7 +93,7 @@ export function Team() {
           {members.map((member, idx) => (
             <motion.div
               key={member.name}
-              className="group relative bg-[#FAF9F6] border border-border rounded-3xl overflow-hidden shadow-clay hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-500"
+              className="group relative bg-[rgba(248,245,240,0.85)] backdrop-blur-md border border-[rgba(107,30,50,0.14)] rounded-3xl overflow-hidden shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_18px_45px_-12px_rgba(69,19,35,0.08)] hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-500"
               data-testid={`team-member-${idx}`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -138,7 +138,7 @@ export function Team() {
                 )}
                 <a
                   href={member.linkedin}
-                  className="inline-flex items-center gap-2 mt-6 text-sm font-medium text-primary hover:underline underline-offset-4 transition-all"
+                  className="inline-flex items-center gap-2 mt-6 text-sm font-medium text-primary hover:text-[#8B3048] hover:underline underline-offset-4 transition-all"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

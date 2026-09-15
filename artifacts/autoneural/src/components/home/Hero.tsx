@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 export function Hero() {
   return (
       <section className="relative overflow-hidden bg-background lg:min-h-[100dvh]" data-testid="hero-section">
-        <div className="absolute inset-0 bg-[linear-gradient(115deg,_rgba(238,221,196,0.76)_0%,_rgba(250,247,239,0.94)_44%,_rgba(244,235,219,0.9)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(115deg,_rgba(241,236,229,0.88)_0%,_rgba(248,245,240,0.96)_44%,_rgba(241,236,229,0.8)_100%)]" />
         <div className="absolute bottom-0 left-0 h-44 w-full bg-gradient-to-t from-background to-transparent" />
         <div className="relative z-10 grid min-h-[100dvh] grid-cols-1 items-center gap-4 px-6 pb-12 pt-32 md:px-12 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:pb-0 lg:pt-28 xl:px-20">
           <div className="max-w-[760px]">
@@ -23,7 +23,7 @@ export function Hero() {
                 </span>
               </span>
             </motion.h1>
-            <motion.div className="relative mb-7 h-[250px] overflow-hidden rounded-t-[7rem] bg-[linear-gradient(180deg,_rgba(38,70,57,0.12),_rgba(211,106,38,0.08)_58%,_transparent)] lg:hidden" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="relative mb-7 h-[250px] overflow-hidden rounded-t-[7rem] bg-[linear-gradient(180deg,_rgba(107,30,50,0.10),_rgba(139,48,72,0.06)_58%,_transparent)] lg:hidden" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <img alt="Autoneural AI agents automating business workflows, connecting WhatsApp, Gmail, Slack and CRM tools" width={1106} height={1081} fetchPriority="high" decoding="async" className="absolute bottom-0 left-1/2 h-[108%] w-auto max-w-none -translate-x-1/2 object-contain object-bottom" draggable="false" src="/media/hero-agents.webp" />
               <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-background to-transparent" />
             </motion.div>
@@ -31,32 +31,32 @@ export function Hero() {
               We build practical AI tools that handle repetitive work, answer customers, organize data, and connect your business apps so your team can focus on growth.
             </motion.p>
             <motion.div className="mb-8 flex flex-wrap gap-2.5" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
-              <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-3.5 py-2 text-sm font-medium text-secondary-foreground shadow-sm backdrop-blur">
+              <span className="inline-flex items-center gap-2 rounded-full border border-[rgba(107,30,50,0.14)] bg-[rgba(248,245,240,0.75)] px-3.5 py-2 text-sm font-medium text-secondary-foreground shadow-sm backdrop-blur-md">
                 <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
                 AI workers
               </span>
-              <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-3.5 py-2 text-sm font-medium text-secondary-foreground shadow-sm backdrop-blur">
+              <span className="inline-flex items-center gap-2 rounded-full border border-[rgba(107,30,50,0.14)] bg-[rgba(248,245,240,0.75)] px-3.5 py-2 text-sm font-medium text-secondary-foreground shadow-sm backdrop-blur-md">
                 <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
                 Task automation
               </span>
-              <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-3.5 py-2 text-sm font-medium text-secondary-foreground shadow-sm backdrop-blur">
+              <span className="inline-flex items-center gap-2 rounded-full border border-[rgba(107,30,50,0.14)] bg-[rgba(248,245,240,0.75)] px-3.5 py-2 text-sm font-medium text-secondary-foreground shadow-sm backdrop-blur-md">
                 <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
                 Smart chatbots
               </span>
-              <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-3.5 py-2 text-sm font-medium text-secondary-foreground shadow-sm backdrop-blur">
+              <span className="inline-flex items-center gap-2 rounded-full border border-[rgba(107,30,50,0.14)] bg-[rgba(248,245,240,0.75)] px-3.5 py-2 text-sm font-medium text-secondary-foreground shadow-sm backdrop-blur-md">
                 <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
                 Business dashboards
               </span>
-              <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-3.5 py-2 text-sm font-medium text-secondary-foreground shadow-sm backdrop-blur">
+              <span className="inline-flex items-center gap-2 rounded-full border border-[rgba(107,30,50,0.14)] bg-[rgba(248,245,240,0.75)] px-3.5 py-2 text-sm font-medium text-secondary-foreground shadow-sm backdrop-blur-md">
                 <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
                 Custom software
               </span>
             </motion.div>
             <motion.div className="mb-8 flex flex-col flex-wrap gap-3 sm:flex-row" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
-              <a href="#contact" className="rounded-full bg-foreground px-6 py-3.5 text-center text-sm font-semibold text-background shadow-clay transition-all duration-300 hover:-translate-y-1 hover:bg-accent hover:shadow-clay-hover md:text-base" data-testid="hero-button-consultation">
+              <a href="#contact" className="rounded-full bg-primary px-6 py-3.5 text-center text-sm font-semibold text-primary-foreground border border-white/20 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.35),0_8px_20px_-4px_rgba(107,30,50,0.35)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#8B3048] hover:shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.5),0_12px_28px_-4px_rgba(107,30,50,0.45)] md:text-base" data-testid="hero-button-consultation">
                 Book a Call
               </a>
-              <a href="#projects" className="rounded-full border border-border bg-card/45 px-6 py-3.5 text-center text-sm font-semibold text-foreground transition-all duration-300 hover:-translate-y-1 hover:border-foreground hover:bg-card md:text-base" data-testid="hero-button-work">
+              <a href="#projects" className="rounded-full border border-[rgba(107,30,50,0.14)] bg-[rgba(248,245,240,0.75)] px-6 py-3.5 text-center text-sm font-semibold text-foreground backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:text-primary md:text-base" data-testid="hero-button-work">
                 View Work
               </a>
               <a href="https://wa.me/916297927642?text=Hi%20Autoneural!%20I'd%20like%20to%20discuss%20an%20AI%20project%20for%20my%20business." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 rounded-full bg-[#1F8F52] px-6 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#177242] md:text-base" data-testid="hero-button-whatsapp">
@@ -95,7 +95,7 @@ export function Hero() {
             </motion.div>
           </div>
           <motion.div className="pointer-events-none relative hidden h-[calc(100dvh-7rem)] max-h-[840px] min-h-[650px] self-end overflow-hidden lg:block" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
-            <div className="absolute bottom-0 right-0 h-[82%] w-[92%] rounded-t-full bg-[linear-gradient(180deg,_rgba(38,70,57,0.12),_rgba(211,106,38,0.08)_55%,_transparent)]" />
+            <div className="absolute bottom-0 right-0 h-[82%] w-[92%] rounded-t-full bg-[linear-gradient(180deg,_rgba(107,30,50,0.10),_rgba(139,48,72,0.06)_55%,_transparent)]" />
             <div className="absolute bottom-0 left-0 right-0 z-10 h-32 bg-gradient-to-t from-background to-transparent" />
             <img alt="Autoneural AI agents automating business workflows, connecting WhatsApp, Gmail, Slack and CRM tools" width={1106} height={1081} fetchPriority="high" decoding="async" className="absolute bottom-0 right-[-2vw] h-[92%] w-auto max-w-none object-contain object-bottom drop-shadow-[0_30px_60px_rgba(44,30,20,0.18)]" draggable="false" src="/media/hero-agents.webp" />
           </motion.div>

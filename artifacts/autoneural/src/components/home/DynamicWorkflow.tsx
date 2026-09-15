@@ -259,7 +259,7 @@ export function DynamicWorkflow() {
                 }}
                 className={`flex items-center gap-2 rounded-lg px-3.5 py-2 text-xs font-mono font-medium transition-all duration-200 ${
                   isSelected
-                    ? 'bg-primary text-white shadow-[0_2px_12px_rgba(211,106,38,0.35)]'
+                    ? 'bg-primary text-white shadow-[0_2px_12px_rgba(107,30,50,0.35)]'
                     : 'text-slate-400 hover:bg-white/5 hover:text-slate-200'
                 }`}
               >

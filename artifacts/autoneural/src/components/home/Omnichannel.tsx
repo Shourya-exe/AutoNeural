@@ -51,7 +51,7 @@ const CHANNELS: Channel[] = [
     name: 'Website',
     tag: 'Embed widget',
     icon: Globe,
-    accent: '#D36A26',
+    accent: '#6B1E32',
     desc: 'A trained assistant on every page that answers questions instantly and captures real leads.',
     headline: 'Turn visitors into enquiries',
     thread: [

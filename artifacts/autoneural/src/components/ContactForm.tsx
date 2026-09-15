@@ -24,7 +24,7 @@ type FormState = typeof EMPTY;
 type Status = 'idle' | 'submitting' | 'success' | 'error';
 
 const INPUT_CLASS =
-  'w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white transition-colors placeholder:text-gray-600 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary';
+  'w-full rounded-xl border border-white/15 bg-white/[0.06] backdrop-blur-sm px-4 py-3 text-white transition-all placeholder:text-gray-500 focus:border-primary focus:bg-white/[0.09] focus:outline-none focus:ring-1 focus:ring-primary focus:shadow-[0_0_15px_rgba(107,30,50,0.35)]';
 const LABEL_CLASS = 'mb-2 block text-sm font-medium text-gray-400';
 
 export function ContactForm() {
@@ -179,7 +179,7 @@ export function ContactForm() {
         <select
           id="contact-service"
           name="service"
-          className="w-full appearance-none rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white transition-colors focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+          className="w-full appearance-none rounded-xl border border-white/15 bg-white/[0.06] backdrop-blur-sm px-4 py-3 text-white transition-all focus:border-primary focus:bg-white/[0.09] focus:outline-none focus:ring-1 focus:ring-primary focus:shadow-[0_0_15px_rgba(107,30,50,0.35)]"
           value={form.service}
           onChange={(e) => update('service', e.target.value)}
           disabled={submitting}
@@ -203,7 +203,7 @@ export function ContactForm() {
           id="contact-message"
           name="message"
           rows={4}
-          className="w-full resize-none rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white transition-colors placeholder:text-gray-600 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+          className="w-full resize-none rounded-xl border border-white/15 bg-white/[0.06] backdrop-blur-sm px-4 py-3 text-white transition-all placeholder:text-gray-500 focus:border-primary focus:bg-white/[0.09] focus:outline-none focus:ring-1 focus:ring-primary focus:shadow-[0_0_15px_rgba(107,30,50,0.35)]"
           placeholder="Example: We spend 3 hours every day copying order details into spreadsheets..."
           value={form.message}
           onChange={(e) => update('message', e.target.value)}
@@ -239,7 +239,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={submitting}
-        className="mt-3 flex w-full items-center justify-center gap-2 rounded-full bg-primary py-3.5 text-base font-semibold text-white shadow-clay transition-all duration-300 hover:-translate-y-1 hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:translate-y-0"
+        className="mt-3 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#8B3048] via-[#6B1E32] to-[#451323] py-3.5 text-base font-semibold text-white border border-white/20 shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.4),0_8px_24px_-4px_rgba(107,30,50,0.4)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[inset_0_1px_2px_0_rgba(255,255,255,0.6),0_14px_30px_-4px_rgba(107,30,50,0.55)] disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:translate-y-0"
         data-testid="button-submit-enquiry"
       >
         {submitting && <Loader2 size={18} className="animate-spin" />}

@@ -14,7 +14,7 @@ export function Services() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
             <motion.div data-testid="service-card-0" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
-              <div className="group block rounded-2xl border p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-clay border-border bg-white">
+              <div className="group block rounded-2xl p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:shadow-clay-hover border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md hover:border-primary/30">
                 <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl transition-colors bg-muted text-primary group-hover:bg-primary/10">
                   <Lightbulb aria-hidden="true" />
                 </div>
@@ -27,7 +27,7 @@ export function Services() {
               </div>
             </motion.div>
             <motion.div data-testid="service-card-1" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
-              <Link href="/ai-chatbots" className="group block rounded-2xl border p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-clay border-primary/30 bg-white">
+              <Link href="/ai-chatbots" className="group block rounded-2xl p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:shadow-clay-hover border border-primary/25 bg-[rgba(248,245,240,0.92)] backdrop-blur-md hover:border-primary/50">
                 <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl transition-colors bg-primary/12 text-primary">
                   <Bot aria-hidden="true" />
                 </div>
@@ -41,7 +41,7 @@ export function Services() {
               </Link>
             </motion.div>
             <motion.div data-testid="service-card-2" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
-              <Link href="/aivora" className="group block rounded-2xl border p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-clay border-primary/30 bg-white">
+              <Link href="/aivora" className="group block rounded-2xl p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:shadow-clay-hover border border-primary/25 bg-[rgba(248,245,240,0.92)] backdrop-blur-md hover:border-primary/50">
                 <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl transition-colors bg-primary/12 text-primary">
                   <PhoneCall aria-hidden="true" />
                 </div>
@@ -55,7 +55,7 @@ export function Services() {
               </Link>
             </motion.div>
             <motion.div data-testid="service-card-3" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
-              <Link href="/ai-chatbots" className="group block rounded-2xl border p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-clay border-primary/30 bg-white">
+              <Link href="/ai-chatbots" className="group block rounded-2xl p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:shadow-clay-hover border border-primary/25 bg-[rgba(248,245,240,0.92)] backdrop-blur-md hover:border-primary/50">
                 <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl transition-colors bg-primary/12 text-primary">
                   <Sparkles aria-hidden="true" />
                 </div>
@@ -69,7 +69,7 @@ export function Services() {
               </Link>
             </motion.div>
             <motion.div data-testid="service-card-4" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
-              <Link href="/website-development" className="group block rounded-2xl border p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-clay border-primary/30 bg-white">
+              <Link href="/website-development" className="group block rounded-2xl p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:shadow-clay-hover border border-primary/25 bg-[rgba(248,245,240,0.92)] backdrop-blur-md hover:border-primary/50">
                 <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl transition-colors bg-primary/12 text-primary">
                   <Globe aria-hidden="true" />
                 </div>
@@ -83,7 +83,7 @@ export function Services() {
               </Link>
             </motion.div>
             <motion.div data-testid="service-card-5" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
-              <div className="group block rounded-2xl border p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-clay border-border bg-white">
+              <div className="group block rounded-2xl p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:shadow-clay-hover border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md hover:border-primary/30">
                 <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl transition-colors bg-muted text-primary group-hover:bg-primary/10">
                   <Workflow aria-hidden="true" />
                 </div>
@@ -96,7 +96,7 @@ export function Services() {
               </div>
             </motion.div>
             <motion.div data-testid="service-card-6" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
-              <div className="group block rounded-2xl border p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-clay border-border bg-white">
+              <div className="group block rounded-2xl p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:shadow-clay-hover border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md hover:border-primary/30">
                 <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl transition-colors bg-muted text-primary group-hover:bg-primary/10">
                   <Code aria-hidden="true" />
                 </div>
@@ -109,7 +109,7 @@ export function Services() {
               </div>
             </motion.div>
             <motion.div data-testid="service-card-7" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
-              <div className="group block rounded-2xl border p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-clay border-border bg-white">
+              <div className="group block rounded-2xl p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:shadow-clay-hover border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md hover:border-primary/30">
                 <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl transition-colors bg-muted text-primary group-hover:bg-primary/10">
                   <Database aria-hidden="true" />
                 </div>
@@ -122,7 +122,7 @@ export function Services() {
               </div>
             </motion.div>
             <motion.div data-testid="service-card-8" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
-              <div className="group block rounded-2xl border p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-clay border-border bg-white">
+              <div className="group block rounded-2xl p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:shadow-clay-hover border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md hover:border-primary/30">
                 <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl transition-colors bg-muted text-primary group-hover:bg-primary/10">
                   <Unplug aria-hidden="true" />
                 </div>
@@ -135,7 +135,7 @@ export function Services() {
               </div>
             </motion.div>
             <motion.div data-testid="service-card-9" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
-              <div className="group block rounded-2xl border p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-clay border-border bg-white">
+              <div className="group block rounded-2xl p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:shadow-clay-hover border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md hover:border-primary/30">
                 <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl transition-colors bg-muted text-primary group-hover:bg-primary/10">
                   <BrainCircuit aria-hidden="true" />
                 </div>
@@ -148,7 +148,7 @@ export function Services() {
               </div>
             </motion.div>
             <motion.div data-testid="service-card-10" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
-              <div className="group block rounded-2xl border p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-clay border-border bg-white">
+              <div className="group block rounded-2xl p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:shadow-clay-hover border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md hover:border-primary/30">
                 <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl transition-colors bg-muted text-primary group-hover:bg-primary/10">
                   <Cloud aria-hidden="true" />
                 </div>
@@ -161,7 +161,7 @@ export function Services() {
               </div>
             </motion.div>
             <motion.div data-testid="service-card-11" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
-              <div className="group block rounded-2xl border p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-clay border-border bg-white">
+              <div className="group block rounded-2xl p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:shadow-clay-hover border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md hover:border-primary/30">
                 <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl transition-colors bg-muted text-primary group-hover:bg-primary/10">
                   <ChartLine aria-hidden="true" />
                 </div>
@@ -174,7 +174,7 @@ export function Services() {
               </div>
             </motion.div>
             <motion.div data-testid="service-card-12" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
-              <div className="group block rounded-2xl border p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-clay border-border bg-white">
+              <div className="group block rounded-2xl p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:shadow-clay-hover border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md hover:border-primary/30">
                 <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl transition-colors bg-muted text-primary group-hover:bg-primary/10">
                   <Cpu aria-hidden="true" />
                 </div>

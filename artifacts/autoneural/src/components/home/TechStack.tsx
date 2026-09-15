@@ -19,7 +19,7 @@ export function TechStack() {
             </motion.p>
           </div>
           <div className="grid grid-cols-1 gap-5 lg:grid-cols-5">
-            <motion.div className="rounded-lg border border-border bg-card p-5 shadow-sm" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="rounded-2xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-6 shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_14px_35px_-12px_rgba(69,19,35,0.06)]" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <h3 className="mb-3 border-b border-border pb-3 font-mono text-xs font-bold uppercase tracking-[0.18em] text-primary">
                 Experience Layer
               </h3>
@@ -65,7 +65,7 @@ export function TechStack() {
                 </div>
               </div>
             </motion.div>
-            <motion.div className="rounded-lg border border-border bg-card p-5 shadow-sm" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="rounded-2xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-6 shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_14px_35px_-12px_rgba(69,19,35,0.06)]" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <h3 className="mb-3 border-b border-border pb-3 font-mono text-xs font-bold uppercase tracking-[0.18em] text-primary">
                 Backend &amp; APIs
               </h3>
@@ -111,7 +111,7 @@ export function TechStack() {
                 </div>
               </div>
             </motion.div>
-            <motion.div className="rounded-lg border border-border bg-card p-5 shadow-sm" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="rounded-2xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-6 shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_14px_35px_-12px_rgba(69,19,35,0.06)]" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <h3 className="mb-3 border-b border-border pb-3 font-mono text-xs font-bold uppercase tracking-[0.18em] text-primary">
                 AI &amp; Automation
               </h3>
@@ -163,7 +163,7 @@ export function TechStack() {
                 </div>
               </div>
             </motion.div>
-            <motion.div className="rounded-lg border border-border bg-card p-5 shadow-sm" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="rounded-2xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-6 shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_14px_35px_-12px_rgba(69,19,35,0.06)]" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <h3 className="mb-3 border-b border-border pb-3 font-mono text-xs font-bold uppercase tracking-[0.18em] text-primary">
                 Data Systems
               </h3>
@@ -206,7 +206,7 @@ export function TechStack() {
                 </div>
               </div>
             </motion.div>
-            <motion.div className="rounded-lg border border-border bg-card p-5 shadow-sm" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="rounded-2xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-6 shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_14px_35px_-12px_rgba(69,19,35,0.06)]" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <h3 className="mb-3 border-b border-border pb-3 font-mono text-xs font-bold uppercase tracking-[0.18em] text-primary">
                 Cloud &amp; DevOps
               </h3>

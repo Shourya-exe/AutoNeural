@@ -9,8 +9,8 @@ export function AboutContent() {
   return (
       <main className="flex-grow">
         <section className="relative overflow-hidden bg-background pb-16 pt-32 md:pb-20 md:pt-40">
-          <div className="absolute inset-0 bg-[linear-gradient(120deg,_rgba(238,221,196,0.72)_0%,_rgba(250,247,239,0.94)_52%,_rgba(244,235,219,0.86)_100%)]" />
-          <div className="pointer-events-none absolute -left-32 -top-24 h-[420px] w-[420px] rounded-full bg-primary/[0.09] blur-3xl" />
+          <div className="absolute inset-0 bg-[linear-gradient(120deg,_rgba(241,236,229,0.85)_0%,_rgba(248,245,240,0.96)_52%,_rgba(241,236,229,0.75)_100%)]" />
+          <div className="pointer-events-none absolute -left-32 -top-24 h-[420px] w-[420px] rounded-full bg-primary/[0.08] blur-3xl" />
           <div className="absolute bottom-0 left-0 h-24 w-full bg-gradient-to-t from-background to-transparent" />
           <div className="container relative z-10 mx-auto px-6 md:px-12">
             <motion.nav className="mb-8 flex items-center gap-2 font-mono text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-secondary-foreground" aria-label="Breadcrumb" initial={{ opacity: 0, y: 11.599 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
@@ -35,7 +35,7 @@ export function AboutContent() {
               We are an AI-first software team working with businesses that do not have an in-house engineering department. We scope honestly, build in the open, hand over everything, and stay reachable after launch.
             </motion.p>
             <motion.div className="flex flex-col flex-wrap gap-3 sm:flex-row" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
-              <Link href="/contact" className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-7 py-3.5 text-sm font-semibold text-background shadow-clay transition-all duration-300 hover:-translate-y-1 hover:bg-accent hover:shadow-clay-hover md:text-base">
+              <Link href="/contact" className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground border border-white/20 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.35),0_6px_18px_-4px_rgba(107,30,50,0.35)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#8B3048] hover:shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.5),0_10px_24px_-4px_rgba(107,30,50,0.45)] md:text-base">
                 Work with us
                 <ArrowRight size={17} aria-hidden="true" />
               </Link>
@@ -62,7 +62,7 @@ export function AboutContent() {
                   </a>
                 </motion.div>
               </div>
-              <motion.div className="bg-white/5 rounded-3xl p-8 md:p-12 border border-white/10 backdrop-blur-sm" initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+              <motion.div className="rounded-3xl border border-white/15 bg-white/[0.06] p-8 md:p-12 backdrop-blur-md shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.15),0_20px_45px_-10px_rgba(0,0,0,0.5)]" initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
                 <div className="space-y-8">
                   <div className="flex justify-between text-xs font-mono font-bold tracking-widest uppercase border-b border-white/10 pb-4">
                     <span className="text-gray-500">
@@ -153,7 +153,7 @@ export function AboutContent() {
               </motion.p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
-              <motion.div className="group relative bg-[#FAF9F6] border border-border rounded-3xl overflow-hidden shadow-clay hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-500" data-testid="team-member-0" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+              <motion.div className="group relative bg-[rgba(248,245,240,0.85)] backdrop-blur-md border border-[rgba(107,30,50,0.14)] rounded-3xl overflow-hidden shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_18px_45px_-12px_rgba(69,19,35,0.08)] hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-500" data-testid="team-member-0" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
                 <div className="aspect-[4/3] overflow-hidden">
                   <img alt="Palash Lochan Mahana, Founder &amp; Chief Marketing Officer at Autoneural" width={1254} height={1254} loading="lazy" decoding="async" className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="/assets/palash_lochan_mahana_founder_portrait-DUGUGd_X.webp" />
                 </div>
@@ -167,7 +167,7 @@ export function AboutContent() {
                   <p className="text-secondary-foreground leading-relaxed text-sm md:text-base">
                     Palash helps businesses understand where AI can create real value, shape the right offer, and turn ideas into clear product and growth plans.
                   </p>
-                  <a href="https://www.linkedin.com/in/palash-lochan-mahana-9b274330a/" className="inline-flex items-center gap-2 mt-6 text-sm font-medium text-primary hover:underline underline-offset-4 transition-all" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/palash-lochan-mahana-9b274330a/" className="inline-flex items-center gap-2 mt-6 text-sm font-medium text-primary hover:text-[#8B3048] hover:underline underline-offset-4 transition-all" target="_blank" rel="noopener noreferrer">
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
                       </path>
@@ -176,7 +176,7 @@ export function AboutContent() {
                   </a>
                 </div>
               </motion.div>
-              <motion.div className="group relative bg-[#FAF9F6] border border-border rounded-3xl overflow-hidden shadow-clay hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-500" data-testid="team-member-1" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+              <motion.div className="group relative bg-[rgba(248,245,240,0.85)] backdrop-blur-md border border-[rgba(107,30,50,0.14)] rounded-3xl overflow-hidden shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_18px_45px_-12px_rgba(69,19,35,0.08)] hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-500" data-testid="team-member-1" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
                 <div className="aspect-[4/3] overflow-hidden">
                   <img alt="Priyanshu Maity, Chief Technology Officer at Autoneural" width={1254} height={1254} loading="lazy" decoding="async" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" src="/assets/priyanshu_maity_cto_portrait-dnTgGttd.webp" />
                 </div>
@@ -343,7 +343,7 @@ export function AboutContent() {
               <div className="mx-auto h-1 w-20 rounded-full bg-primary" style={{ width: '0px' }} />
             </div>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-clay" data-testid="testimonial-card-0" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay-hover" data-testid="testimonial-card-0" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
                 <Quote size={64} className="pointer-events-none absolute -right-3 -top-3 text-primary/[0.07] transition-colors duration-500 group-hover:text-primary/[0.13]" aria-hidden="true" />
                 <div className="relative z-10 mb-5 flex items-center gap-3">
                   <div className="flex gap-0.5">
@@ -374,7 +374,7 @@ export function AboutContent() {
                   </div>
                 </div>
               </motion.div>
-              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-clay" data-testid="testimonial-card-1" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay-hover" data-testid="testimonial-card-1" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
                 <Quote size={64} className="pointer-events-none absolute -right-3 -top-3 text-primary/[0.07] transition-colors duration-500 group-hover:text-primary/[0.13]" aria-hidden="true" />
                 <div className="relative z-10 mb-5 flex items-center gap-3">
                   <div className="flex gap-0.5">
@@ -405,7 +405,7 @@ export function AboutContent() {
                   </div>
                 </div>
               </motion.div>
-              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-clay" data-testid="testimonial-card-2" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay-hover" data-testid="testimonial-card-2" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
                 <Quote size={64} className="pointer-events-none absolute -right-3 -top-3 text-primary/[0.07] transition-colors duration-500 group-hover:text-primary/[0.13]" aria-hidden="true" />
                 <div className="relative z-10 mb-5 flex items-center gap-3">
                   <div className="flex gap-0.5">
@@ -436,7 +436,7 @@ export function AboutContent() {
                   </div>
                 </div>
               </motion.div>
-              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-clay" data-testid="testimonial-card-3" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay-hover" data-testid="testimonial-card-3" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
                 <Quote size={64} className="pointer-events-none absolute -right-3 -top-3 text-primary/[0.07] transition-colors duration-500 group-hover:text-primary/[0.13]" aria-hidden="true" />
                 <div className="relative z-10 mb-5 flex items-center gap-3">
                   <div className="flex gap-0.5">
@@ -467,7 +467,7 @@ export function AboutContent() {
                   </div>
                 </div>
               </motion.div>
-              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-clay" data-testid="testimonial-card-4" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay-hover" data-testid="testimonial-card-4" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
                 <Quote size={64} className="pointer-events-none absolute -right-3 -top-3 text-primary/[0.07] transition-colors duration-500 group-hover:text-primary/[0.13]" aria-hidden="true" />
                 <div className="relative z-10 mb-5 flex items-center gap-3">
                   <div className="flex gap-0.5">
@@ -498,7 +498,7 @@ export function AboutContent() {
                   </div>
                 </div>
               </motion.div>
-              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-clay" data-testid="testimonial-card-5" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+              <motion.div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-[rgba(107,30,50,0.12)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-8 shadow-clay transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay-hover" data-testid="testimonial-card-5" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
                 <Quote size={64} className="pointer-events-none absolute -right-3 -top-3 text-primary/[0.07] transition-colors duration-500 group-hover:text-primary/[0.13]" aria-hidden="true" />
                 <div className="relative z-10 mb-5 flex items-center gap-3">
                   <div className="flex gap-0.5">
@@ -547,9 +547,9 @@ export function AboutContent() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <motion.div className="group cursor-pointer" data-testid="insight-card-0" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
-                <div className="block p-8 rounded-2xl bg-muted border border-border group-hover:bg-white group-hover:shadow-clay group-hover:border-primary/20 transition-all duration-500 h-full flex flex-col">
+                <div className="block p-8 rounded-2xl bg-[rgba(248,245,240,0.85)] backdrop-blur-md border border-[rgba(107,30,50,0.12)] shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_14px_35px_-10px_rgba(69,19,35,0.06)] group-hover:bg-[rgba(248,245,240,0.96)] group-hover:shadow-clay-hover group-hover:border-primary/30 transition-all duration-500 h-full flex flex-col">
                   <div className="flex flex-wrap items-center gap-3 mb-6">
-                    <span className="px-3 py-1 bg-white border border-border rounded-md text-xs font-mono font-medium text-foreground tracking-wide group-hover:border-primary/20 transition-colors">
+                    <span className="px-3 py-1 bg-[rgba(248,245,240,0.95)] border border-[rgba(107,30,50,0.14)] rounded-full text-xs font-mono font-semibold text-primary tracking-wide group-hover:border-primary/30 transition-colors">
                       AI Agents
                     </span>
                     <span className="text-sm text-secondary-foreground">
@@ -574,9 +574,9 @@ export function AboutContent() {
                 </div>
               </motion.div>
               <motion.div className="group cursor-pointer" data-testid="insight-card-1" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
-                <div className="block p-8 rounded-2xl bg-muted border border-border group-hover:bg-white group-hover:shadow-clay group-hover:border-primary/20 transition-all duration-500 h-full flex flex-col">
+                <div className="block p-8 rounded-2xl bg-[rgba(248,245,240,0.85)] backdrop-blur-md border border-[rgba(107,30,50,0.12)] shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_14px_35px_-10px_rgba(69,19,35,0.06)] group-hover:bg-[rgba(248,245,240,0.96)] group-hover:shadow-clay-hover group-hover:border-primary/30 transition-all duration-500 h-full flex flex-col">
                   <div className="flex flex-wrap items-center gap-3 mb-6">
-                    <span className="px-3 py-1 bg-white border border-border rounded-md text-xs font-mono font-medium text-foreground tracking-wide group-hover:border-primary/20 transition-colors">
+                    <span className="px-3 py-1 bg-[rgba(248,245,240,0.95)] border border-[rgba(107,30,50,0.14)] rounded-full text-xs font-mono font-semibold text-primary tracking-wide group-hover:border-primary/30 transition-colors">
                       Automation
                     </span>
                     <span className="text-sm text-secondary-foreground">
@@ -601,9 +601,9 @@ export function AboutContent() {
                 </div>
               </motion.div>
               <motion.div className="group cursor-pointer" data-testid="insight-card-2" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
-                <div className="block p-8 rounded-2xl bg-muted border border-border group-hover:bg-white group-hover:shadow-clay group-hover:border-primary/20 transition-all duration-500 h-full flex flex-col">
+                <div className="block p-8 rounded-2xl bg-[rgba(248,245,240,0.85)] backdrop-blur-md border border-[rgba(107,30,50,0.12)] shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_14px_35px_-10px_rgba(69,19,35,0.06)] group-hover:bg-[rgba(248,245,240,0.96)] group-hover:shadow-clay-hover group-hover:border-primary/30 transition-all duration-500 h-full flex flex-col">
                   <div className="flex flex-wrap items-center gap-3 mb-6">
-                    <span className="px-3 py-1 bg-white border border-border rounded-md text-xs font-mono font-medium text-foreground tracking-wide group-hover:border-primary/20 transition-colors">
+                    <span className="px-3 py-1 bg-[rgba(248,245,240,0.95)] border border-[rgba(107,30,50,0.14)] rounded-full text-xs font-mono font-semibold text-primary tracking-wide group-hover:border-primary/30 transition-colors">
                       Web Development
                     </span>
                     <span className="text-sm text-secondary-foreground">

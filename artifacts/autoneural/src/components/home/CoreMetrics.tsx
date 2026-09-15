@@ -227,7 +227,7 @@ export function CoreMetrics() {
                       </span>
                     </div>
                     <div className="h-1.5 w-full overflow-hidden rounded-full bg-white/10">
-                      <div className="h-full rounded-full" style={{ backgroundColor: 'rgb(211, 106, 38)', width: '0px' }} />
+                      <div className="h-full rounded-full" style={{ backgroundColor: 'rgb(139, 48, 72)', width: '0px' }} />
                     </div>
                   </div>
                   <div>

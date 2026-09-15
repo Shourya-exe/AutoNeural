@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'wouter';
 import { ChevronRight, ArrowRight, Briefcase, Linkedin, Layers } from 'lucide-react';
-import { TEAM_MEMBERS_DATA, type TeamMember } from '@/data/team';
+import { TEAM_MEMBERS_DATA, type TeamMember, type TeamMemberCategory } from '@/data/team';
 
 function initialsOf(name: string) {
   return name
@@ -14,21 +14,23 @@ function initialsOf(name: string) {
     .join('');
 }
 
-const CATEGORIES = ['All', 'Engineering', 'AI & Automation', 'Product & Design', 'Operations'] as const;
+const CATEGORIES = ['All', 'Engineering', 'AI & Automation'] as const;
 
 export function TeamMembersContent() {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
   const filteredMembers = selectedCategory === 'All'
     ? TEAM_MEMBERS_DATA
-    : TEAM_MEMBERS_DATA.filter((m) => m.category === selectedCategory);
+    : TEAM_MEMBERS_DATA.filter((m) =>
+        m.category.includes(selectedCategory as TeamMemberCategory)
+      );
 
   return (
     <main className="flex-grow">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-background pb-16 pt-32 md:pb-20 md:pt-40">
-        <div className="absolute inset-0 bg-[linear-gradient(120deg,_rgba(238,221,196,0.72)_0%,_rgba(250,247,239,0.94)_52%,_rgba(244,235,219,0.86)_100%)]" />
-        <div className="pointer-events-none absolute -left-32 -top-24 h-[420px] w-[420px] rounded-full bg-primary/[0.09] blur-3xl" />
+        <div className="absolute inset-0 bg-[linear-gradient(120deg,_rgba(241,236,229,0.85)_0%,_rgba(248,245,240,0.96)_52%,_rgba(241,236,229,0.75)_100%)]" />
+        <div className="pointer-events-none absolute -left-32 -top-24 h-[420px] w-[420px] rounded-full bg-primary/[0.08] blur-3xl" />
         <div className="absolute bottom-0 left-0 h-24 w-full bg-gradient-to-t from-background to-transparent" />
 
         <div className="container relative z-10 mx-auto px-6 md:px-12">
@@ -60,13 +62,13 @@ export function TeamMembersContent() {
           >
             <Link
               href="/about"
-              className="rounded-full border border-border bg-card/60 px-4 py-1.5 font-mono text-xs font-semibold uppercase tracking-wider text-secondary-foreground hover:border-foreground hover:text-foreground transition-all"
+              className="rounded-full border border-[rgba(107,30,50,0.14)] bg-[rgba(248,245,240,0.7)] px-4 py-1.5 font-mono text-xs font-semibold uppercase tracking-wider text-secondary-foreground backdrop-blur-sm hover:border-primary hover:text-primary transition-all"
             >
               About Overview
             </Link>
             <Link
               href="/founders"
-              className="rounded-full border border-border bg-card/60 px-4 py-1.5 font-mono text-xs font-semibold uppercase tracking-wider text-secondary-foreground hover:border-foreground hover:text-foreground transition-all"
+              className="rounded-full border border-[rgba(107,30,50,0.14)] bg-[rgba(248,245,240,0.7)] px-4 py-1.5 font-mono text-xs font-semibold uppercase tracking-wider text-secondary-foreground backdrop-blur-sm hover:border-primary hover:text-primary transition-all"
             >
               Founders &amp; Leadership
             </Link>
@@ -114,14 +116,14 @@ export function TeamMembersContent() {
           >
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-7 py-3.5 text-sm font-semibold text-background shadow-clay transition-all duration-300 hover:-translate-y-1 hover:bg-accent hover:shadow-clay-hover md:text-base"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground border border-white/20 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.35),0_6px_18px_-4px_rgba(107,30,50,0.35)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#8B3048] hover:shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.5),0_10px_24px_-4px_rgba(107,30,50,0.45)] md:text-base"
             >
               Work with our team
               <ArrowRight size={17} aria-hidden="true" />
             </Link>
             <Link
               href="/founders"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-border bg-card/60 px-7 py-3.5 text-sm font-semibold text-foreground backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-foreground hover:bg-card md:text-base"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-[rgba(107,30,50,0.14)] bg-[rgba(248,245,240,0.75)] px-7 py-3.5 text-sm font-semibold text-foreground backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:text-primary md:text-base"
             >
               Executive Leadership
             </Link>
@@ -130,7 +132,7 @@ export function TeamMembersContent() {
       </section>
 
       {/* Directory & Role Filter Section */}
-      <section className="py-24 bg-background border-t border-border/60" data-testid="team-members-section">
+      <section className="py-24 bg-background border-t border-[rgba(107,30,50,0.12)]" data-testid="team-members-section">
         <div className="container mx-auto px-6 md:px-12">
           {/* Category Filter Tabs */}
           <div className="mb-12 flex flex-wrap items-center justify-between gap-4">
@@ -153,8 +155,8 @@ export function TeamMembersContent() {
                     onClick={() => setSelectedCategory(cat)}
                     className={`rounded-full px-4 py-2 font-mono text-xs font-semibold uppercase tracking-wider transition-all duration-300 ${
                       isActive
-                        ? 'bg-foreground text-background shadow-sm'
-                        : 'bg-card border border-border text-secondary-foreground hover:border-foreground hover:text-foreground'
+                        ? 'bg-primary text-primary-foreground shadow-sm'
+                        : 'bg-[rgba(248,245,240,0.7)] backdrop-blur-sm border border-[rgba(107,30,50,0.14)] text-secondary-foreground hover:border-primary hover:text-primary'
                     }`}
                   >
                     {cat}
@@ -172,7 +174,7 @@ export function TeamMembersContent() {
                   key={member.id}
                   layout
                   data-testid={`team-card-${member.id}`}
-                  className="group relative bg-[#FAF9F6] border border-border rounded-3xl overflow-hidden shadow-clay hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-500 flex flex-col justify-between"
+                  className="group relative bg-[rgba(248,245,240,0.85)] backdrop-blur-md border border-[rgba(107,30,50,0.14)] rounded-3xl overflow-hidden shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_18px_45px_-12px_rgba(69,19,35,0.08)] hover:shadow-clay-hover hover:-translate-y-1 transition-all duration-500 flex flex-col justify-between"
                   initial={{ opacity: 0, scale: 0.96 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.96 }}
@@ -206,8 +208,8 @@ export function TeamMembersContent() {
                         </div>
                       )}
 
-                      <span className="absolute top-4 right-4 rounded-full bg-card/90 backdrop-blur-sm border border-border px-3 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-secondary-foreground shadow-sm">
-                        {member.category}
+                      <span className="absolute top-4 right-4 rounded-full bg-[rgba(248,245,240,0.92)] backdrop-blur-md border border-[rgba(107,30,50,0.14)] px-3 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-primary shadow-sm">
+                        {member.category.join(' • ')}
                       </span>
                     </div>
 
@@ -223,7 +225,7 @@ export function TeamMembersContent() {
                         {member.bio}
                       </p>
 
-                      <div className="pt-4 border-t border-border/60">
+                      <div className="pt-4 border-t border-[rgba(107,30,50,0.12)]">
                         <h4 className="text-[11px] font-mono uppercase tracking-wider text-slate-500 font-semibold mb-1 flex items-center gap-1.5">
                           <Layers size={13} className="text-primary" />
                           Primary Responsibility
@@ -240,7 +242,7 @@ export function TeamMembersContent() {
                     {member.linkedin ? (
                       <a
                         href={member.linkedin}
-                        className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline underline-offset-4 transition-all"
+                        className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-[#8B3048] hover:underline underline-offset-4 transition-all"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -261,7 +263,7 @@ export function TeamMembersContent() {
       </section>
 
       {/* Join the Team / Contact Section */}
-      <section className="py-20 bg-muted/40 border-t border-border">
+      <section className="py-20 bg-[rgba(241,236,229,0.5)] border-t border-[rgba(107,30,50,0.12)]">
         <div className="container mx-auto px-6 md:px-12 text-center max-w-3xl">
           <h3 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-4">
             Want to build with Autoneural?
@@ -272,14 +274,14 @@ export function TeamMembersContent() {
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-7 py-3.5 text-sm font-semibold text-background shadow-clay transition-all hover:-translate-y-0.5 hover:bg-accent"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground border border-white/20 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.35),0_6px_18px_-4px_rgba(107,30,50,0.35)] transition-all hover:-translate-y-0.5 hover:bg-[#8B3048]"
             >
               Get in Touch
               <ArrowRight size={16} />
             </Link>
             <Link
               href="/founders"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-border bg-card px-7 py-3.5 text-sm font-semibold text-foreground transition-all hover:border-foreground"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-[rgba(107,30,50,0.14)] bg-[rgba(248,245,240,0.75)] px-7 py-3.5 text-sm font-semibold text-foreground backdrop-blur-md transition-all hover:border-primary hover:text-primary"
             >
               Founders &amp; Leadership
             </Link>

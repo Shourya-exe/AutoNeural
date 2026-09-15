@@ -8,8 +8,8 @@ export function WebsiteDevelopmentContent() {
   return (
       <main className="flex-grow">
         <section className="relative overflow-hidden bg-background pb-16 pt-32 md:pb-20 md:pt-40">
-          <div className="absolute inset-0 bg-[linear-gradient(120deg,_rgba(238,221,196,0.72)_0%,_rgba(250,247,239,0.94)_52%,_rgba(244,235,219,0.86)_100%)]" />
-          <div className="pointer-events-none absolute -left-32 -top-24 h-[420px] w-[420px] rounded-full bg-primary/[0.09] blur-3xl" />
+          <div className="absolute inset-0 bg-[linear-gradient(120deg,_rgba(241,236,229,0.85)_0%,_rgba(248,245,240,0.96)_52%,_rgba(241,236,229,0.75)_100%)]" />
+          <div className="pointer-events-none absolute -left-32 -top-24 h-[420px] w-[420px] rounded-full bg-primary/[0.08] blur-3xl" />
           <div className="absolute bottom-0 left-0 h-24 w-full bg-gradient-to-t from-background to-transparent" />
           <div className="container relative z-10 mx-auto px-6 md:px-12">
             <motion.nav className="mb-8 flex items-center gap-2 font-mono text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-secondary-foreground" aria-label="Breadcrumb" initial={{ opacity: 0, y: 11.599 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
@@ -97,7 +97,7 @@ export function WebsiteDevelopmentContent() {
                     </div>
                   </div>
                 </div>
-                <div className="relative overflow-hidden rounded-2xl bg-[linear-gradient(150deg,_rgba(211,106,38,0.14),_rgba(38,70,57,0.12))] p-5">
+                <div className="relative overflow-hidden rounded-2xl bg-[linear-gradient(150deg,_rgba(107,30,50,0.12),_rgba(139,48,72,0.08))] border border-[rgba(107,30,50,0.12)] p-5">
                   <div className="mb-4 h-3 w-20 rounded-full bg-foreground/15" />
                   <div className="space-y-3">
                     <motion.div className="h-9 rounded-lg border border-border/60 bg-card/80" initial={{ opacity: 0, x: -12 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>

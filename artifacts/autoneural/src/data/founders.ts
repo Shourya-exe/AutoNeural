@@ -16,28 +16,6 @@ export interface FounderProfile {
 
 export const FOUNDERS_DATA: FounderProfile[] = [
   {
-    id: 'ceo',
-    name: '[Executive Leadership / CEO]',
-    role: 'Chief Executive Officer',
-    shortIntro:
-      '[Leadership introduction placeholder: Guiding company strategy, vision, and operational execution for Autoneural.]',
-    about:
-      '[Executive summary placeholder: Leading business direction, capital allocation, and long-term organizational strategy for Autoneural. Profile details and credentials to be populated upon official announcement.]',
-    responsibilities: [
-      'Executive company vision, operational growth, and organizational strategy.',
-      'Strategic enterprise partnerships and commercial alliances.',
-      'Corporate governance, resource allocation, and team scaling.',
-    ],
-    relevantExperience: [
-      '[Executive leadership and business management experience placeholder.]',
-      '[Strategic advisory and enterprise growth background placeholder.]',
-    ],
-    image: null,
-    objectPosition: 'object-center',
-    linkedin: null,
-    isPlaceholder: true,
-  },
-  {
     id: 'cto',
     name: 'Priyanshu Maity',
     role: 'Chief Technology Officer',

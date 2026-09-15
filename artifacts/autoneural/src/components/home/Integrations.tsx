@@ -23,7 +23,7 @@ export function Integrations() {
             </motion.p>
           </div>
           <div className="mb-6 grid gap-5 md:grid-cols-2">
-            <motion.div className="rounded-3xl border border-border bg-card p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="rounded-3xl border border-[rgba(107,30,50,0.14)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-7 shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_18px_45px_-12px_rgba(69,19,35,0.08)] transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-clay-hover" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <h3 className="mb-2 font-heading text-xl font-semibold text-foreground">
                 CRM &amp; Business Systems
               </h3>
@@ -105,7 +105,7 @@ export function Integrations() {
                 </div>
               </div>
             </motion.div>
-            <motion.div className="rounded-3xl border border-border bg-card p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="rounded-3xl border border-[rgba(107,30,50,0.14)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-7 shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_18px_45px_-12px_rgba(69,19,35,0.08)] transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-clay-hover" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <h3 className="mb-2 font-heading text-xl font-semibold text-foreground">
                 Messaging &amp; Social
               </h3>
@@ -187,7 +187,7 @@ export function Integrations() {
                 </div>
               </div>
             </motion.div>
-            <motion.div className="rounded-3xl border border-border bg-card p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="rounded-3xl border border-[rgba(107,30,50,0.14)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-7 shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_18px_45px_-12px_rgba(69,19,35,0.08)] transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-clay-hover" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <h3 className="mb-2 font-heading text-xl font-semibold text-foreground">
                 Commerce &amp; Payments
               </h3>
@@ -269,7 +269,7 @@ export function Integrations() {
                 </div>
               </div>
             </motion.div>
-            <motion.div className="rounded-3xl border border-border bg-card p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-clay" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
+            <motion.div className="rounded-3xl border border-[rgba(107,30,50,0.14)] bg-[rgba(248,245,240,0.85)] backdrop-blur-md p-7 shadow-clay shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_18px_45px_-12px_rgba(69,19,35,0.08)] transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-clay-hover" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ duration: 0.6, ease: 'easeOut' }}>
               <h3 className="mb-2 font-heading text-xl font-semibold text-foreground">
                 Workspace, Data &amp; AI
               </h3>
